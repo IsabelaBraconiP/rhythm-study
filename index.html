@@ -320,9 +320,6 @@
           <p id="backup-note" class="mt-2 text-xs text-muted"></p>
         </div>
 
-        <div class="mt-6 flex justify-end">
-          <button id="new-participant" type="button" class="btn btn-quiet">Start a new participant →</button>
-        </div>
       </div>
     </section>
   </main>
@@ -996,7 +993,7 @@ function renderResults() {
   $('#res-meta').innerHTML = meta.map(([k, v]) => `<dt class="text-muted">${k}</dt><dd class="font-medium">${esc(v)}</dd>`).join('');
   setSendUI(s.sentAt ? 'sent' : 'idle', s.sentAt ? 'The results were emailed to the research team.' : '');
   $('#backup-note').textContent = backupOk
-    ? 'A backup copy is also saved in this browser (Researcher settings on the first screen).'
+    ? 'A backup copy is also saved in this browser.'
     : 'Warning: no backup copy could be saved in this browser — download the data now.';
   $('#backup-note').classList.toggle('text-red-700', !backupOk);
 }
@@ -1395,16 +1392,6 @@ $('#cfg-test-send').addEventListener('click', async () => {
   }
 });
 
-$('#new-participant').addEventListener('click', () => {
-  if (!downloaded && !(session && session.sentAt) && !confirm('Start a new participant? This session is saved in the browser, but its results were not sent or downloaded yet.')) return;
-  session = null; downloaded = false;
-  $('#welcome-form').reset(); $('#bg-form').reset();
-  ['#proms-accent', '#proms-tempo'].forEach(s => { $(s).value = ''; });
-  $('#proms-done').checked = false; $('#proms-next').disabled = true;
-  ['p-name', 'p-age', 'p-email', 'proms-accent', 'proms-tempo', 'p-instrument'].forEach(id => fieldError(id, false));
-  setSendUI('idle', '');
-  go('welcome');
-});
 window.addEventListener('beforeunload', e => {
   if (session && !downloaded && !session.sentAt && (session.trials.length || currentStep !== 'welcome')) { e.preventDefault(); e.returnValue = ''; }
 });
