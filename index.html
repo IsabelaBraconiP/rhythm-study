@@ -14,7 +14,8 @@
     (double-click to open, or upload to any static host such as GitHub Pages).
   • Styles are pre-compiled Tailwind CSS v3. If you add Tailwind classes that are not already used
     in this file, also add  <script src="https://cdn.tailwindcss.com"></script>  to the <head>.
-  • Researcher settings: "Researcher settings" at the bottom of the first screen, or URL parameters:
+  • Researcher settings: open the page with ?researcher at the end of the address (hidden from
+    participants); they appear at the bottom of the first screen. Or use URL parameters:
         ?tempos=100,120  reps=1  sync=16  cont=1  contBeats=16  random=1
          practice=1  practiceBpm=110  practiceBeats=8  exclude=4  proms=<https link>
     e.g. index.html?tempos=135,150,160&cont=1
@@ -23,7 +24,7 @@
     of that file) and paste its URL into RESULTS_URL at the top of the script section below, or into
     "Researcher settings → Email results" on a single computer.
 -->
-<style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.card{border-radius:1rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:1.5rem;--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}@media (min-width:640px){.card{padding:2.25rem}}.eyebrow{font-size:.75rem;line-height:1rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1))}.h-title{margin-top:.5rem;font-family:Iowan Old Style,Palatino Linotype,Book Antiqua,Palatino,Georgia,serif;font-size:1.875rem;line-height:2.25rem;line-height:1.25;--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}@media (min-width:640px){.h-title{font-size:2.15rem}}.prose-body{font-size:.975rem;line-height:1.625;color:rgba(31,35,40,.9)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:.5rem;padding:.625rem 1.25rem;font-size:.875rem;line-height:1.25rem;font-weight:600;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.btn:focus{outline:2px solid transparent;outline-offset:2px}.btn:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-opacity:1;--tw-ring-color:rgb(30 91 87/var(--tw-ring-opacity,1));--tw-ring-offset-width:2px}.btn:disabled{cursor:not-allowed;opacity:.4}.btn-primary{--tw-bg-opacity:1;background-color:rgb(30 91 87/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.btn-primary:hover{--tw-bg-opacity:1;background-color:rgb(21 66 63/var(--tw-bg-opacity,1))}.btn-primary:hover:disabled{--tw-bg-opacity:1;background-color:rgb(30 91 87/var(--tw-bg-opacity,1))}.btn-secondary{border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.btn-secondary:hover{--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1))}.btn-quiet{padding-left:.5rem;padding-right:.5rem;--tw-text-opacity:1;color:rgb(103 107 114/var(--tw-text-opacity,1))}.btn-quiet:hover,.label{--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.label{display:block;font-size:.875rem;line-height:1.25rem;font-weight:500}.opt{font-weight:400;--tw-text-opacity:1;color:rgb(103 107 114/var(--tw-text-opacity,1))}.field{margin-top:.375rem;display:block;width:100%;border-radius:.5rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:.625rem .875rem;font-size:1rem;line-height:1.5rem;--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.field::-moz-placeholder{color:hsla(218,5%,43%,.5)}.field::placeholder{color:hsla(218,5%,43%,.5)}.field:focus{--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1));outline:2px solid transparent;outline-offset:2px;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(30,91,87,.2)}.field-sm{margin-top:.25rem;display:block;width:100%;border-radius:.375rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:.5rem .75rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.field-sm:focus{--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1));outline:2px solid transparent;outline-offset:2px;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(30,91,87,.2)}.check{height:1.25rem;width:1.25rem;flex-shrink:0;border-radius:.25rem;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1));accent-color:#1e5b57}.steps-list{margin-top:1rem}.steps-list>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.steps-list li{display:flex;gap:.75rem}.step-num{margin-top:.125rem;display:grid;height:1.5rem;width:1.5rem;flex-shrink:0;place-items:center;border-radius:9999px;--tw-bg-opacity:1;background-color:rgb(227 238 236/var(--tw-bg-opacity,1));font-size:.75rem;line-height:1rem;font-weight:600;--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1))}.note{border-radius:.75rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1));padding:.875rem 1rem;font-size:.875rem;line-height:1.25rem;line-height:1.625;color:rgba(31,35,40,.85)}.pointer-events-none{pointer-events:none}.static{position:static}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.mx-auto{margin-left:auto;margin-right:auto}.my-10{margin-top:2.5rem;margin-bottom:2.5rem}.mt-0{margin-top:0}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline{display:inline}.flex{display:flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-56{height:14rem}.h-6{height:1.5rem}.h-px{height:1px}.min-h-\[1\.25rem\]{min-height:1.25rem}.min-h-\[1\.5rem\]{min-height:1.5rem}.min-h-\[2\.75rem\]{min-height:2.75rem}.min-h-screen{min-height:100vh}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-56{width:14rem}.w-6{width:1.5rem}.w-full{width:100%}.min-w-0{min-width:0}.min-w-\[34rem\]{min-width:34rem}.max-w-3xl{max-width:48rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.grid-cols-\[auto\2c 1fr\]{grid-template-columns:auto 1fr}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.place-items-center{place-items:center}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-x-6{-moz-column-gap:1.5rem;column-gap:1.5rem}.gap-y-1{row-gap:.25rem}.gap-y-3{row-gap:.75rem}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-line>:not([hidden])~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(227 224 216/var(--tw-divide-opacity,1))}.overflow-x-auto{overflow-x:auto}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-accent{--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1))}.border-line{--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1))}.bg-accent{--tw-bg-opacity:1;background-color:rgb(30 91 87/var(--tw-bg-opacity,1))}.bg-accent-soft{--tw-bg-opacity:1;background-color:rgb(227 238 236/var(--tw-bg-opacity,1))}.bg-ink\/80{background-color:rgba(31,35,40,.8)}.bg-line{--tw-bg-opacity:1;background-color:rgb(227 224 216/var(--tw-bg-opacity,1))}.bg-paper{--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/50{background-color:hsla(0,0%,100%,.5)}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:.25rem}.pb-12{padding-bottom:3rem}.pb-6{padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.pl-1{padding-left:.25rem}.pl-4{padding-left:1rem}.pt-2{padding-top:.5rem}.pt-3{padding-top:.75rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.align-bottom{vertical-align:bottom}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.font-sans{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}.font-serif{font-family:Iowan Old Style,Palatino Linotype,Book Antiqua,Palatino,Georgia,serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[0\.68rem\]{font-size:.68rem}.text-\[0\.7rem\]{font-size:.7rem}.text-\[0\.975rem\]{font-size:.975rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-\[0\.12em\]{letter-spacing:.12em}.tracking-\[0\.16em\]{letter-spacing:.16em}.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-wide{letter-spacing:.025em}.text-accent{--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1))}.text-ink{--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.text-ink\/70{color:rgba(31,35,40,.7)}.text-ink\/80{color:rgba(31,35,40,.8)}.text-muted{--tw-text-opacity:1;color:rgb(103 107 114/var(--tw-text-opacity,1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.text-warn{--tw-text-opacity:1;color:rgb(138 90 18/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-40{opacity:.4}.shadow-\[inset_0_1px_0_rgba\(255\2c 255\2c 255\2c \.8\)\2c 0_1px_2px_rgba\(0\2c 0\2c 0\2c \.04\)\]{--tw-shadow:inset 0 1px 0 hsla(0,0%,100%,.8),0 1px 2px rgba(0,0,0,.04);--tw-shadow-colored:inset 0 1px 0 var(--tw-shadow-color),0 1px 2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.ring{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.blur{--tw-blur:blur(8px)}.blur,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.hover\:text-ink:hover{--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.hover\:text-red-800:hover{--tw-text-opacity:1;color:rgb(153 27 27/var(--tw-text-opacity,1))}@media (min-width:640px){.sm\:col-span-2{grid-column:span 2/span 2}.sm\:my-12{margin-top:3rem;margin-bottom:3rem}.sm\:inline{display:inline}.sm\:h-64{height:16rem}.sm\:w-64{width:16rem}.sm\:w-7{width:1.75rem}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:px-7{padding-left:1.75rem;padding-right:1.75rem}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:py-12{padding-bottom:3rem}.sm\:pt-12,.sm\:py-12{padding-top:3rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}}</style>
+<style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.card{border-radius:1rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:1.5rem;--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}@media (min-width:640px){.card{padding:2.25rem}}.eyebrow{font-size:.75rem;line-height:1rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1))}.h-title{margin-top:.5rem;font-family:Iowan Old Style,Palatino Linotype,Book Antiqua,Palatino,Georgia,serif;font-size:1.875rem;line-height:2.25rem;line-height:1.25;--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}@media (min-width:640px){.h-title{font-size:2.15rem}}.prose-body{font-size:.975rem;line-height:1.625;color:rgba(31,35,40,.9)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:.5rem;padding:.625rem 1.25rem;font-size:.875rem;line-height:1.25rem;font-weight:600;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.btn:focus{outline:2px solid transparent;outline-offset:2px}.btn:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-opacity:1;--tw-ring-color:rgb(30 91 87/var(--tw-ring-opacity,1));--tw-ring-offset-width:2px}.btn:disabled{cursor:not-allowed;opacity:.4}.btn-primary{--tw-bg-opacity:1;background-color:rgb(30 91 87/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.btn-primary:hover{--tw-bg-opacity:1;background-color:rgb(21 66 63/var(--tw-bg-opacity,1))}.btn-primary:hover:disabled{--tw-bg-opacity:1;background-color:rgb(30 91 87/var(--tw-bg-opacity,1))}.btn-secondary{border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.btn-secondary:hover{--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1))}.btn-quiet{padding-left:.5rem;padding-right:.5rem;--tw-text-opacity:1;color:rgb(103 107 114/var(--tw-text-opacity,1))}.btn-quiet:hover,.label{--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.label{display:block;font-size:.875rem;line-height:1.25rem;font-weight:500}.field{margin-top:.375rem;display:block;width:100%;border-radius:.5rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:.625rem .875rem;font-size:1rem;line-height:1.5rem;--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.field::-moz-placeholder{color:hsla(218,5%,43%,.5)}.field::placeholder{color:hsla(218,5%,43%,.5)}.field:focus{--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1));outline:2px solid transparent;outline-offset:2px;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(30,91,87,.2)}.field-sm{margin-top:.25rem;display:block;width:100%;border-radius:.375rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:.5rem .75rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.field-sm:focus{--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1));outline:2px solid transparent;outline-offset:2px;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(30,91,87,.2)}.check{height:1.25rem;width:1.25rem;flex-shrink:0;border-radius:.25rem;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1));accent-color:#1e5b57}.steps-list{margin-top:1rem}.steps-list>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.steps-list li{display:flex;gap:.75rem}.step-num{margin-top:.125rem;display:grid;height:1.5rem;width:1.5rem;flex-shrink:0;place-items:center;border-radius:9999px;--tw-bg-opacity:1;background-color:rgb(227 238 236/var(--tw-bg-opacity,1));font-size:.75rem;line-height:1rem;font-weight:600;--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1))}.note{border-radius:.75rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1));padding:.875rem 1rem;font-size:.875rem;line-height:1.25rem;line-height:1.625;color:rgba(31,35,40,.85)}.field-err{margin-top:.375rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.field[aria-invalid=true]{--tw-border-opacity:1;border-color:rgb(220 38 38/var(--tw-border-opacity,1))}.\!choice{display:flex;min-width:7rem;cursor:pointer;align-items:center;gap:.75rem;border-radius:.75rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1));padding:.75rem 1.25rem;font-size:1rem;line-height:1.5rem;font-weight:500}.\!choice:has(:checked){--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(227 238 236/var(--tw-bg-opacity,1))}.choice{display:flex;min-width:7rem;cursor:pointer;align-items:center;gap:.75rem;border-radius:.75rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1));padding:.75rem 1.25rem;font-size:1rem;line-height:1.5rem;font-weight:500}.choice:has(:checked){--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(227 238 236/var(--tw-bg-opacity,1))}#p-instrument[aria-invalid=true] .\!choice,#p-instrument[aria-invalid=true] .choice{--tw-border-opacity:1;border-color:rgb(220 38 38/var(--tw-border-opacity,1))}.pointer-events-none{pointer-events:none}.static{position:static}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.mx-auto{margin-left:auto;margin-right:auto}.my-10{margin-top:2.5rem;margin-bottom:2.5rem}.mb-2{margin-bottom:.5rem}.mt-0{margin-top:0}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.inline{display:inline}.flex{display:flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-2{height:.5rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-56{height:14rem}.h-6{height:1.5rem}.h-auto{height:auto}.h-px{height:1px}.min-h-\[1\.25rem\]{min-height:1.25rem}.min-h-\[1\.5rem\]{min-height:1.5rem}.min-h-\[2\.75rem\]{min-height:2.75rem}.min-h-screen{min-height:100vh}.w-0\.5{width:.125rem}.w-2{width:.5rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-56{width:14rem}.w-6{width:1.5rem}.w-full{width:100%}.min-w-0{min-width:0}.min-w-\[34rem\]{min-width:34rem}.max-w-3xl{max-width:48rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.grid-cols-\[auto\2c 1fr\]{grid-template-columns:auto 1fr}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.place-items-center{place-items:center}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-x-6{-moz-column-gap:1.5rem;column-gap:1.5rem}.gap-y-1{row-gap:.25rem}.gap-y-3{row-gap:.75rem}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-line>:not([hidden])~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(227 224 216/var(--tw-divide-opacity,1))}.overflow-x-auto{overflow-x:auto}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-accent{--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1))}.border-line{--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1))}.border-muted{--tw-border-opacity:1;border-color:rgb(103 107 114/var(--tw-border-opacity,1))}.bg-accent{--tw-bg-opacity:1;background-color:rgb(30 91 87/var(--tw-bg-opacity,1))}.bg-accent-soft{--tw-bg-opacity:1;background-color:rgb(227 238 236/var(--tw-bg-opacity,1))}.bg-ink{--tw-bg-opacity:1;background-color:rgb(31 35 40/var(--tw-bg-opacity,1))}.bg-ink\/80{background-color:rgba(31,35,40,.8)}.bg-line{--tw-bg-opacity:1;background-color:rgb(227 224 216/var(--tw-bg-opacity,1))}.bg-paper{--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/50{background-color:hsla(0,0%,100%,.5)}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:.25rem}.pb-12{padding-bottom:3rem}.pb-6{padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.pl-1{padding-left:.25rem}.pl-4{padding-left:1rem}.pt-2{padding-top:.5rem}.pt-3{padding-top:.75rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.align-bottom{vertical-align:bottom}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.font-sans{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}.font-serif{font-family:Iowan Old Style,Palatino Linotype,Book Antiqua,Palatino,Georgia,serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[0\.68rem\]{font-size:.68rem}.text-\[0\.7rem\]{font-size:.7rem}.text-\[0\.975rem\]{font-size:.975rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-\[0\.12em\]{letter-spacing:.12em}.tracking-\[0\.16em\]{letter-spacing:.16em}.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-wide{letter-spacing:.025em}.text-accent{--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1))}.text-ink{--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.text-ink\/70{color:rgba(31,35,40,.7)}.text-muted{--tw-text-opacity:1;color:rgb(103 107 114/var(--tw-text-opacity,1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.text-warn{--tw-text-opacity:1;color:rgb(138 90 18/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-40{opacity:.4}.shadow-\[inset_0_1px_0_rgba\(255\2c 255\2c 255\2c \.8\)\2c 0_1px_2px_rgba\(0\2c 0\2c 0\2c \.04\)\]{--tw-shadow:inset 0 1px 0 hsla(0,0%,100%,.8),0 1px 2px rgba(0,0,0,.04);--tw-shadow-colored:inset 0 1px 0 var(--tw-shadow-color),0 1px 2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.ring{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.blur{--tw-blur:blur(8px)}.blur,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.hover\:text-ink:hover{--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.hover\:text-red-800:hover{--tw-text-opacity:1;color:rgb(153 27 27/var(--tw-text-opacity,1))}@media (min-width:640px){.sm\:col-span-2{grid-column:span 2/span 2}.sm\:my-12{margin-top:3rem;margin-bottom:3rem}.sm\:inline{display:inline}.sm\:h-64{height:16rem}.sm\:w-64{width:16rem}.sm\:w-7{width:1.75rem}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:grid-cols-\[9rem\2c 1fr\]{grid-template-columns:9rem 1fr}.sm\:px-7{padding-left:1.75rem;padding-right:1.75rem}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:py-12{padding-bottom:3rem}.sm\:pt-12,.sm\:py-12{padding-top:3rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}}</style>
 <style>
   html { -webkit-text-size-adjust: 100%; }
   body { touch-action: manipulation; }
@@ -65,16 +66,18 @@
           <div>
             <label for="p-name" class="label">Full name</label>
             <input id="p-name" name="name" type="text" autocomplete="name" class="field" required>
-            <p id="p-name-err" class="mt-1.5 hidden text-sm text-red-700">Please enter your full name to continue.</p>
+            <p id="p-name-err" class="field-err hidden">Please enter your full name.</p>
           </div>
-          <div class="grid gap-5 sm:grid-cols-2">
+          <div class="grid gap-5 sm:grid-cols-[9rem,1fr]">
             <div>
-              <label for="p-id" class="label">Participant ID <span class="opt">(optional)</span></label>
-              <input id="p-id" name="pid" type="text" autocomplete="off" placeholder="e.g. P07" class="field">
+              <label for="p-age" class="label">Age</label>
+              <input id="p-age" name="age" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" class="field num" required>
+              <p id="p-age-err" class="field-err hidden">Please enter your age (numbers only).</p>
             </div>
             <div>
-              <label for="p-age" class="label">Age <span class="opt">(optional)</span></label>
-              <input id="p-age" name="age" type="number" inputmode="numeric" min="10" max="110" class="field">
+              <label for="p-email" class="label">Email</label>
+              <input id="p-email" name="email" type="email" inputmode="email" autocomplete="email" class="field" required>
+              <p id="p-email-err" class="field-err hidden">Please enter a valid email address.</p>
             </div>
           </div>
           <div class="flex justify-end pt-2">
@@ -84,7 +87,7 @@
       </div>
 
       <!-- Researcher settings (low emphasis) -->
-      <details id="researcher" class="group mt-6 rounded-2xl border border-line bg-white/50 px-5 py-4 text-sm sm:px-7">
+      <details id="researcher" hidden class="group mt-6 rounded-2xl border border-line bg-white/50 px-5 py-4 text-sm sm:px-7">
         <summary class="flex cursor-pointer select-none items-center gap-2 font-medium text-muted hover:text-ink">
           <svg class="chev h-3.5 w-3.5 transition-transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
           Researcher settings
@@ -165,11 +168,13 @@
         </div>
 
         <div class="mt-8 border-t border-line pt-6">
-          <p class="label">Your scores <span class="opt">(optional)</span></p>
-          <p class="mt-1 text-sm text-muted">If PROMS shows your scores at the end, you can type them here.</p>
+          <p class="label">Your scores</p>
+          <p class="mt-1 text-sm text-muted">Type the scores PROMS shows you at the end of each test.</p>
           <div class="mt-3 grid gap-5 sm:grid-cols-2">
-            <div><label for="proms-accent" class="label">Accent score</label><input id="proms-accent" type="text" inputmode="decimal" autocomplete="off" class="field num"></div>
-            <div><label for="proms-tempo" class="label">Tempo score</label><input id="proms-tempo" type="text" inputmode="decimal" autocomplete="off" class="field num"></div>
+            <div><label for="proms-accent" class="label">Accent score</label><input id="proms-accent" type="text" inputmode="decimal" autocomplete="off" class="field num" required>
+              <p id="proms-accent-err" class="field-err hidden">Please enter your Accent score (numbers only).</p></div>
+            <div><label for="proms-tempo" class="label">Tempo score</label><input id="proms-tempo" type="text" inputmode="decimal" autocomplete="off" class="field num" required>
+              <p id="proms-tempo-err" class="field-err hidden">Please enter your Tempo score (numbers only).</p></div>
           </div>
         </div>
 
@@ -246,11 +251,14 @@
         <p class="eyebrow">Almost done</p>
         <h2 class="h-title" tabindex="-1">One last question</h2>
         <form id="bg-form" class="mt-6 space-y-5" novalidate>
-          <div class="max-w-sm">
-            <label for="p-training" class="label">Years of formal musical training <span class="opt">(optional)</span></label>
-            <p class="mt-1 text-sm text-muted">Lessons on an instrument or voice. Enter 0 if none.</p>
-            <input id="p-training" type="number" inputmode="decimal" min="0" max="80" step="0.5" class="field num">
-          </div>
+          <fieldset id="p-instrument" aria-describedby="p-instrument-err">
+            <legend class="text-lg font-medium text-ink">Do you play any instrument?</legend>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <label class="choice"><input type="radio" name="instrument" value="yes" class="check" required> Yes</label>
+              <label class="choice"><input type="radio" name="instrument" value="no" class="check"> No</label>
+            </div>
+            <p id="p-instrument-err" class="field-err hidden">Please choose Yes or No.</p>
+          </fieldset>
           <div class="flex justify-end pt-2">
             <button type="submit" class="btn btn-primary">Finish</button>
           </div>
@@ -273,16 +281,20 @@
               <tbody id="res-body" class="divide-y divide-line"></tbody>
             </table>
           </div>
-          <details class="mt-3 text-sm text-muted">
+          <h3 class="mt-8 font-serif text-xl">Clicks and taps</h3>
+          <p class="mt-1 text-sm text-muted">Each round on a timeline: when the clicks played and when you tapped.</p>
+          <div id="res-charts" class="mt-4 space-y-4"></div>
+
+          <details class="mt-4 text-sm text-muted">
             <summary class="flex cursor-pointer items-center gap-1.5 hover:text-ink">
               <svg class="chev h-3 w-3 transition-transform" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
               What do these numbers mean?
             </summary>
             <dl class="mt-3 space-y-2 pl-4 leading-relaxed">
-              <div><dt class="inline font-medium text-ink">Asynchrony</dt> <dd class="inline">— average time between your tap and the click. Negative means you tapped slightly before the click; most people do this by a few tens of milliseconds.</dd></div>
-              <div><dt class="inline font-medium text-ink">SD</dt> <dd class="inline">— standard deviation: how much that timing varied from tap to tap. Lower is more consistent.</dd></div>
-              <div><dt class="inline font-medium text-ink">Variability</dt> <dd class="inline">— coefficient of variation (CV): variation in the time between your taps, as a percentage of their average. Lower is steadier.</dd></div>
-              <div class="cont-only"><dt class="inline font-medium text-ink">Tempo after clicks stopped</dt> <dd class="inline">— your tapping speed once the clicks stopped, and how much faster (+) or slower (−) that was than the original beat.</dd></div>
+              <div><dt class="inline font-medium text-ink">Asynchrony</dt><dd class="inline">: average time between your tap and the click. Negative means you tapped slightly before the click; most people do this by a few tens of milliseconds.</dd></div>
+              <div><dt class="inline font-medium text-ink">SD</dt><dd class="inline">: standard deviation: how much that timing varied from tap to tap. Lower is more consistent.</dd></div>
+              <div><dt class="inline font-medium text-ink">Variability</dt><dd class="inline">: coefficient of variation (CV): variation in the time between your taps, as a percentage of their average. Lower is steadier.</dd></div>
+              <div class="cont-only"><dt class="inline font-medium text-ink">Tempo after clicks stopped</dt><dd class="inline">: your tapping speed once the clicks stopped, and how much faster (+) or slower (−) that was than the original beat.</dd></div>
             </dl>
           </details>
         </div>
@@ -297,17 +309,14 @@
             </button>
           </div>
           <p id="send-status" class="mt-2 min-h-[1.25rem] text-sm text-muted" aria-live="polite"></p>
-          <div class="mt-4 flex flex-wrap gap-3">
-            <button id="dl-summary" type="button" class="btn btn-secondary">
+          <div class="mt-4 flex flex-wrap items-center gap-3">
+            <button id="dl-pdf" type="button" class="btn btn-secondary">
               <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3v10m0 0l-4-4m4 4l4-4M4 16h12"/></svg>
-              Download data (CSV)
+              <span id="pdf-label">Download PDF</span>
             </button>
-            <button id="dl-raw" type="button" class="btn btn-secondary">
-              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3v10m0 0l-4-4m4 4l4-4M4 16h12"/></svg>
-              Download raw timestamps (CSV)
-            </button>
+            <span id="pdf-status" class="text-sm text-muted"></span>
           </div>
-          <p class="mt-3 text-xs leading-relaxed text-muted"><strong class="font-medium text-ink/80">Data</strong>: one row for this participant with all metrics and PROMS scores. <strong class="font-medium text-ink/80">Raw timestamps</strong>: one row per click and per tap, for re-analysis.</p>
+          <p class="mt-3 text-xs leading-relaxed text-muted">The PDF has the participant's details, PROMS scores, all tapping results, the charts and every tap.</p>
           <p id="backup-note" class="mt-2 text-xs text-muted"></p>
         </div>
 
@@ -435,6 +444,7 @@ function slope(xs, ys) {
   return den ? num / den : null;
 }
 const fin = v => v != null && Number.isFinite(v);
+const yesNo = v => v === 'yes' ? 'Yes' : v === 'no' ? 'No' : '';
 const fmt = (v, d = 1) => fin(v) ? v.toFixed(d) : '—';
 const fmtSigned = (v, d = 1) => fin(v) ? (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d) : '—';
 const r3 = v => fin(v) ? Math.round(v * 1000) / 1000 : '';
@@ -644,7 +654,7 @@ function newSession() {
   return {
     sessionId: makeId(), appVersion: APP_VERSION,
     startedAt: new Date().toISOString(), completedAt: null, complete: false,
-    participant: { name: '', id: '', age: '', musicalTrainingYears: '' },
+    participant: { name: '', age: '', email: '', playsInstrument: '' },
     proms: { accent: '', tempo: '', completed: false, openedAt: null, confirmedAt: null },
     config: null, plan: [], planPos: 0, trials: [], env: {},
   };
@@ -701,16 +711,33 @@ function go(step) {
 /* =========================================================================
    Step 1 — Welcome
    ========================================================================= */
+/** Show or hide a field's error message; returns true when the field is invalid. */
+function fieldError(id, bad) {
+  const el = $('#' + id), err = $('#' + id + '-err');
+  if (err) err.classList.toggle('hidden', !bad);
+  if (el) el.setAttribute('aria-invalid', bad ? 'true' : 'false');
+  return bad;
+}
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const SCORE_RE = /^\d+([.,]\d+)?$/;
+// Age: digits only (typed with the keyboard, no arrows).
+$('#p-age').addEventListener('input', e => { const v = e.target.value.replace(/\D/g, '').slice(0, 3); if (v !== e.target.value) e.target.value = v; });
+// Clear a field's error as soon as it is filled in.
+['p-name', 'p-age', 'p-email', 'proms-accent', 'proms-tempo'].forEach(id => $('#' + id).addEventListener('input', () => fieldError(id, false)));
+$$('input[name="instrument"]').forEach(r => r.addEventListener('change', () => fieldError('p-instrument', false)));
 $('#welcome-form').addEventListener('submit', e => {
   e.preventDefault();
   const name = $('#p-name').value.trim().replace(/\s+/g, ' ');
-  $('#p-name-err').classList.toggle('hidden', !!name);
-  $('#p-name').setAttribute('aria-invalid', name ? 'false' : 'true');
-  if (!name) { $('#p-name').focus(); return; }
+  const age = $('#p-age').value.trim(), ageN = Number(age);
+  const email = $('#p-email').value.trim();
+  const bad = [
+    fieldError('p-name', !name) && 'p-name',
+    fieldError('p-age', !/^\d{1,3}$/.test(age) || ageN < 5 || ageN > 120) && 'p-age',
+    fieldError('p-email', !EMAIL_RE.test(email)) && 'p-email',
+  ].filter(Boolean);
+  if (bad.length) { $('#' + bad[0]).focus(); return; }
   if (!session) session = newSession();
-  session.participant.name = name;
-  session.participant.id = $('#p-id').value.trim();
-  session.participant.age = $('#p-age').value.trim();
+  Object.assign(session.participant, { name, age, email });
   persistSession();
   go('proms');
 });
@@ -721,9 +748,16 @@ $('#welcome-form').addEventListener('submit', e => {
 $('#proms-link').addEventListener('click', () => { if (session && !session.proms.openedAt) session.proms.openedAt = new Date().toISOString(); });
 $('#proms-done').addEventListener('change', e => { $('#proms-next').disabled = !e.target.checked; });
 $('#proms-back').addEventListener('click', () => go('welcome'));
+['#proms-accent', '#proms-tempo'].forEach(sel => $(sel).addEventListener('input', e => {
+  const v = e.target.value.replace(/[^\d.,]/g, ''); if (v !== e.target.value) e.target.value = v;
+}));
 $('#proms-next').addEventListener('click', () => {
-  session.proms.accent = $('#proms-accent').value.trim();
-  session.proms.tempo = $('#proms-tempo').value.trim();
+  const accent = $('#proms-accent').value.trim(), tempo = $('#proms-tempo').value.trim();
+  const bad = [fieldError('proms-accent', !SCORE_RE.test(accent)) && 'proms-accent',
+               fieldError('proms-tempo', !SCORE_RE.test(tempo)) && 'proms-tempo'].filter(Boolean);
+  if (bad.length) { $('#' + bad[0]).focus(); return; }
+  session.proms.accent = accent.replace(',', '.');
+  session.proms.tempo = tempo.replace(',', '.');
   session.proms.completed = true;
   session.proms.confirmedAt = new Date().toISOString();
   if (!session.trials.length) { session.config = { ...config, tempos: [...config.tempos] }; session.plan = buildPlan(session.config); session.planPos = 0; }
@@ -923,7 +957,9 @@ document.addEventListener('visibilitychange', () => { if (document.hidden && Run
    ========================================================================= */
 $('#bg-form').addEventListener('submit', e => {
   e.preventDefault();
-  session.participant.musicalTrainingYears = $('#p-training').value.trim();
+  const choice = $('input[name="instrument"]:checked');
+  if (fieldError('p-instrument', !choice)) return;
+  session.participant.playsInstrument = choice.value;
   session.complete = true;
   session.completedAt = new Date().toISOString();
   persistSession();
@@ -952,10 +988,11 @@ function renderResults() {
     || `<tr><td class="${td} text-muted" colspan="6">No completed rounds.</td></tr>`;
   $$('#step-results .cont-only').forEach(el => el.classList.toggle('hidden', !cont));
 
-  const p = s.participant, meta = [
-    ['Name', p.name], ['Participant ID', p.id || '—'], ['Age', p.age || '—'], ['Musical training', p.musicalTrainingYears !== '' ? `${p.musicalTrainingYears} years` : '—'],
-    ['PROMS Accent', s.proms.accent || '—'], ['PROMS Tempo', s.proms.tempo || '—'], ['Session', s.sessionId],
-  ];
+  const meta = participantRows(s);
+  $('#res-charts').innerHTML = rows.map(({ t }) => `<figure class="rounded-xl border border-line p-4">
+      <figcaption class="mb-2 flex flex-wrap items-baseline justify-between gap-2 text-sm"><span class="font-medium">${bpmLabel(t.bpm)} BPM${s.config.reps > 1 ? ` (${t.rep})` : ''}</span>
+        <span class="flex items-center gap-4 text-xs text-muted"><span class="flex items-center gap-1.5"><span class="inline-block h-3 w-0.5 bg-ink"></span>Click</span>${cont ? '<span class="flex items-center gap-1.5"><span class="inline-block h-3 w-0.5 border-l border-dashed border-muted"></span>Silent beat</span>' : ''}<span class="flex items-center gap-1.5"><span class="inline-block h-2 w-2 rounded-full bg-accent"></span>Your tap</span></span></figcaption>
+      ${timelineSVG(t)}</figure>`).join('');
   $('#res-meta').innerHTML = meta.map(([k, v]) => `<dt class="text-muted">${k}</dt><dd class="font-medium">${esc(v)}</dd>`).join('');
   setSendUI(s.sentAt ? 'sent' : 'idle', s.sentAt ? 'The results were emailed to the research team.' : '');
   $('#backup-note').textContent = backupOk
@@ -974,8 +1011,8 @@ function summaryRow(s) {
   const shifts = s.trials.map(t => t.clock && t.clock.shiftMs).filter(fin);
   const lastClock = s.trials.length ? s.trials[s.trials.length - 1].clock : null;
   const r = {
-    session_id: s.sessionId, participant_name: p.name, participant_id: p.id, age: p.age,
-    musical_training_years: p.musicalTrainingYears,
+    session_id: s.sessionId, participant_name: p.name, age: p.age, participant_email: p.email || '',
+    plays_instrument: p.playsInstrument || '',
     proms_accent_score: s.proms.accent, proms_tempo_score: s.proms.tempo, proms_completed: s.proms.completed ? 1 : 0,
     session_started: s.startedAt, session_completed: s.completedAt || '', session_complete: s.complete ? 1 : 0,
     tempos_bpm: c.tempos.join(' '), repetitions: c.reps, sync_beats: c.syncBeats,
@@ -1026,15 +1063,15 @@ function summaryRow(s) {
   return r;
 }
 
-const RAW_COLS = ['session_id', 'participant_name', 'participant_id', 'age', 'musical_training_years', 'proms_accent_score', 'proms_tempo_score',
+const RAW_COLS = ['session_id', 'participant_name', 'age', 'participant_email', 'plays_instrument', 'proms_accent_score', 'proms_tempo_score',
   'trial_seq', 'trial_key', 'is_practice', 'attempt', 'is_final_attempt', 'target_bpm', 'ioi_ms',
   'phase', 'event', 'beat_number', 'tap_number', 'time_ms', 'perf_time_ms', 'audio_time_s', 'input',
   'nearest_beat', 'asynchrony_ms', 'closest_tap_to_beat', 'in_analysis', 'iti_ms', 'iti_valid', 'handler_lag_ms', 'clock_offset_ms', 'timing_method'];
 
 function rawRows(s) {
   const p = s.participant, rows = [];
-  const base = { session_id: s.sessionId, participant_name: p.name, participant_id: p.id, age: p.age,
-    musical_training_years: p.musicalTrainingYears, proms_accent_score: s.proms.accent, proms_tempo_score: s.proms.tempo };
+  const base = { session_id: s.sessionId, participant_name: p.name, age: p.age, participant_email: p.email || '',
+    plays_instrument: p.playsInstrument || '', proms_accent_score: s.proms.accent, proms_tempo_score: s.proms.tempo };
   const lastAttempt = new Map(); s.trials.forEach(t => lastAttempt.set(t.planIndex, t));
   s.trials.forEach((t, ti) => {
     const a = analyzeTrial(t), t0 = t.beatPerf[0], ioi = t.ioiMs;
@@ -1076,14 +1113,209 @@ function download(name, text) {
   setTimeout(() => URL.revokeObjectURL(url), 2000);
 }
 function stamp(iso) { const d = iso ? new Date(iso) : new Date(), p = n => String(n).padStart(2, '0'); return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}`; }
-function fileBase(s) { return `tapping_${slug(s.participant.id || s.participant.name)}_${stamp(s.startedAt)}`; }
+function fileBase(s) { return `tapping_${slug(s.participant.name)}_${stamp(s.startedAt)}`; }
 
-$('#dl-summary').addEventListener('click', () => {
-  const r = summaryRow(session); download(fileBase(session) + '_data.csv', toCSV([r], Object.keys(r))); downloaded = true;
+/* =========================================================================
+   Participant details, timeline chart and PDF report
+   ========================================================================= */
+function participantRows(s) {
+  const p = s.participant;
+  return [['Name', p.name], ['Age', p.age || '—'], ['Email', p.email || '—'], ['Plays an instrument', yesNo(p.playsInstrument) || '—'],
+    ['PROMS Accent score', s.proms.accent || '—'], ['PROMS Tempo score', s.proms.tempo || '—'], ['Session', s.sessionId]];
+}
+/** Clicks, silent beats and taps of one round, in seconds from the first click. */
+function timelineData(t) {
+  const a = analyzeTrial(t), t0 = t.beatPerf[0], ioi = t.ioiMs, last = t.beatPerf[t.beatPerf.length - 1];
+  const clicks = t.beatPerf.map(b => (b - t0) / 1000);
+  const silent = Array.from({ length: t.contBeats }, (_, k) => (last + (k + 1) * ioi - t0) / 1000);
+  const start = -ioi / 2000, end = (last + t.contBeats * ioi + ioi / 2 - t0) / 1000;
+  const taps = a.taps.map(p => (p.t - t0) / 1000).filter(x => x >= start - 1 && x <= end + 1);
+  const lo = Math.min(start, ...taps), hi = Math.max(end, ...taps);
+  return { clicks, silent, taps, contStart: t.contBeats ? (last + ioi / 2 - t0) / 1000 : null, end, lo, hi };
+}
+function niceStep(span) { return span > 40 ? 10 : span > 20 ? 5 : span > 8 ? 2 : 1; }
+function timelineSVG(t) {
+  const d = timelineData(t), W = 640, H = 108, L = 70, R = 10, yC = 28, yT = 62, yA = 86;
+  const x = v => L + (v - d.lo) / (d.hi - d.lo) * (W - L - R);
+  const step = niceStep(d.hi - d.lo), ticks = [];
+  for (let v = Math.ceil(d.lo / step) * step; v <= d.hi; v += step) ticks.push(v);
+  return `<svg viewBox="0 0 ${W} ${H}" class="block h-auto w-full" role="img" aria-label="Timeline of clicks and taps at ${bpmLabel(t.bpm)} BPM" font-family="ui-sans-serif,system-ui,sans-serif">
+    ${d.contStart != null ? `<rect x="${x(d.contStart)}" y="8" width="${x(d.end) - x(d.contStart)}" height="${yA - 12}" fill="#f1efe9"/>
+      <text x="${x(d.contStart) + 4}" y="18" font-size="10" fill="#676b72">clicks stopped</text>` : ''}
+    <text x="0" y="${yC + 4}" font-size="11" fill="#676b72">Clicks</text>
+    <text x="0" y="${yT + 4}" font-size="11" fill="#676b72">Your taps</text>
+    <line x1="${L}" x2="${W - R}" y1="${yC}" y2="${yC}" stroke="#e3e0d8"/><line x1="${L}" x2="${W - R}" y1="${yT}" y2="${yT}" stroke="#e3e0d8"/>
+    ${d.clicks.map(v => `<line x1="${x(v)}" x2="${x(v)}" y1="${yC - 9}" y2="${yC + 9}" stroke="#1f2328" stroke-width="2"/>`).join('')}
+    ${d.silent.map(v => `<line x1="${x(v)}" x2="${x(v)}" y1="${yC - 9}" y2="${yC + 9}" stroke="#a9a59b" stroke-width="1.2" stroke-dasharray="2 2"/>`).join('')}
+    ${d.taps.map(v => `<circle cx="${x(v)}" cy="${yT}" r="4" fill="#1e5b57"/>`).join('')}
+    <line x1="${L}" x2="${W - R}" y1="${yA}" y2="${yA}" stroke="#c9c5bb"/>
+    ${ticks.map(v => `<line x1="${x(v)}" x2="${x(v)}" y1="${yA}" y2="${yA + 4}" stroke="#c9c5bb"/><text x="${x(v)}" y="${yA + 16}" font-size="10" fill="#676b72" text-anchor="middle">${v} s</text>`).join('')}
+  </svg>`;
+}
+
+// PDF libraries load only when "Download PDF" is clicked (needs internet). Pinned versions + integrity hashes.
+const PDF_LIBS = [
+  { src: 'https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js', integrity: 'sha384-JcnsjUPPylna1s1fvi1u12X5qjY5OL56iySh75FdtrwhO/SWXgMjoVqcKyIIWOLk' },
+  { src: 'https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js', integrity: 'sha384-fCAW/rDWORTbQXSiB7mOg0QtQ5c+r0f544y6XoKjuVva0nMBlCpNUjiFeG5iMdS3' },
+];
+let pdfLibsPromise = null;
+function loadScript({ src, integrity }) {
+  return new Promise((resolve, reject) => {
+    const el = document.createElement('script');
+    el.src = src; el.integrity = integrity; el.crossOrigin = 'anonymous';
+    el.onload = resolve; el.onerror = () => reject(new Error('Could not load ' + src));
+    document.head.appendChild(el);
+  });
+}
+function loadPdfLibs() {
+  if (window.jspdf && window.jspdf.jsPDF && window.jspdf.jsPDF.API.autoTable) return Promise.resolve();
+  if (!pdfLibsPromise) pdfLibsPromise = loadScript(PDF_LIBS[0]).then(() => loadScript(PDF_LIBS[1])).catch(e => { pdfLibsPromise = null; throw e; });
+  return pdfLibsPromise;
+}
+// The PDF's built-in fonts only cover Western European characters.
+const pdfText = v => String(v ?? '').replace(/−/g, '-').replace(/[^\x20-\x7E\xA0-\xFF–—‘’“”•…]/g, '?');
+
+const pdfName = s => `rhythm-study_${slug(s.participant.name)}_${stamp(s.startedAt)}.pdf`;
+function buildPdf(s) {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+  const PW = 210, PH = 297, M = 16, W = PW - 2 * M;
+  const INK = [31, 35, 40], MUTED = [103, 107, 114], ACCENT = [30, 91, 87], LINE = [227, 224, 216];
+  const cont = s.config.continuation;
+  const rounds = finalTrials(s).map(t => ({ t, m: analyzeTrial(t).metrics })).sort((a, b) => a.t.bpm - b.t.bpm || a.t.rep - b.t.rep);
+  const name = t => `${bpmLabel(t.bpm)} BPM${s.config.reps > 1 ? ` (${t.rep})` : ''}`;
+  let y = M;
+  const ensure = h => { if (y + h > PH - M - 6) { doc.addPage(); y = M; } };
+  const heading = (txt, size = 12) => { ensure(14); doc.setFont('helvetica', 'bold'); doc.setFontSize(size); doc.setTextColor(...INK); doc.text(pdfText(txt), M, y + 5); y += 9; };
+  const table = opts => {
+    doc.autoTable({
+      startY: y, margin: { left: M, right: M }, theme: 'plain',
+      styles: { font: 'helvetica', fontSize: 9, cellPadding: 1.8, textColor: INK, lineColor: LINE, lineWidth: { bottom: 0.2 } },
+      headStyles: { fontStyle: 'bold', textColor: MUTED, fillColor: [246, 245, 241] },
+      ...opts,
+      head: opts.head && opts.head.map(r => r.map(pdfText)), body: opts.body.map(r => r.map(pdfText)),
+    });
+    y = doc.lastAutoTable.finalY + 7;
+  };
+
+  // Title
+  doc.setFont('helvetica', 'bold'); doc.setFontSize(17); doc.setTextColor(...INK);
+  doc.text('Rhythm perception and finger tapping: results', M, y + 6); y += 12;
+  doc.setFont('helvetica', 'normal'); doc.setFontSize(9); doc.setTextColor(...MUTED);
+  doc.text(pdfText(`Systematic Musicology · Erasmus University College, Rotterdam · ${new Date(s.completedAt || Date.now()).toLocaleString('en-GB')}`), M, y); y += 9;
+
+  heading('Participant');
+  table({ body: participantRows(s).map(([k, v]) => [k, v]), columnStyles: { 0: { textColor: MUTED, cellWidth: 48 }, 1: { fontStyle: 'bold' } } });
+
+  heading('Tapping results');
+  table({
+    head: [['Tempo', 'Asynchrony', 'Asynchrony SD', 'Variability (CV)'].concat(cont ? ['Tempo after clicks stopped', 'Variability after'] : [])],
+    body: rounds.map(({ t, m }) => [name(t), `${fmtSigned(m.syncMeanAsync)} ms`, `${fmt(m.syncSdAsync)} ms`, `${fmt(m.syncCvPct)} %`]
+      .concat(cont ? [`${fmt(m.contTapBpm)} BPM (${fmtSigned(fin(m.contTapBpm) ? (m.contTapBpm - t.bpm) / t.bpm * 100 : null)} %)`, `${fmt(m.contCvPct)} %`] : [])),
+  });
+
+  heading('Clicks and taps');
+  for (const { t } of rounds) {
+    ensure(36);
+    doc.setFont('helvetica', 'bold'); doc.setFontSize(9); doc.setTextColor(...INK); doc.text(pdfText(name(t)), M, y + 3);
+    drawTimelinePdf(doc, t, M, y + 6, W, 24, { INK, MUTED, ACCENT, LINE });
+    y += 36;
+  }
+  doc.setFont('helvetica', 'normal'); doc.setFontSize(8); doc.setTextColor(...MUTED);
+  doc.text('Black lines: clicks. Dashed lines: silent beats (clicks stopped). Green dots: taps. Time in seconds from the first click.', M, y - 3);
+  y += 4;
+
+  heading('Detailed metrics');
+  const metric = (label, f) => [label, ...rounds.map(r => f(r.m, r.t))];
+  const body = [
+    metric('Order presented', (m, t) => String(s.plan.filter(x => x.kind === 'test').findIndex(x => x.planIndex === t.planIndex) + 1)),
+    metric('Attempts', (m, t) => String(s.trials.filter(x => x.planIndex === t.planIndex).length)),
+    metric('Target interval (ms)', (m, t) => fmt(t.ioiMs)),
+    metric('With clicks: taps', m => String(m.syncTaps)),
+    metric('Clicks analysed (first excluded)', m => `${m.syncBeatsAnalysed} (${s.config.excludeInitial})`),
+    metric('Clicks with a tap / missed', m => `${m.syncMatched} / ${m.syncMissed}`),
+    metric('Extra taps', m => String(m.syncExtra)),
+    metric('Mean asynchrony (ms)', m => fmtSigned(m.syncMeanAsync)),
+    metric('Asynchrony SD (ms)', m => fmt(m.syncSdAsync)),
+    metric('Mean interval between taps (ms)', m => fmt(m.syncMeanIti)),
+    metric('Interval SD (ms)', m => fmt(m.syncSdIti)),
+    metric('Variability, CV (%)', m => fmt(m.syncCvPct, 2)),
+    metric('Tapping tempo (BPM)', m => fmt(m.syncTapBpm)),
+  ];
+  if (cont) body.push(
+    metric('After clicks stopped: taps', m => String(m.contTaps)),
+    metric('Mean interval between taps (ms)', m => fmt(m.contMeanIti)),
+    metric('Interval SD (ms)', m => fmt(m.contSdIti)),
+    metric('Variability, CV (%)', m => fmt(m.contCvPct, 2)),
+    metric('Tapping tempo (BPM)', m => fmt(m.contTapBpm)),
+    metric('Tempo error (%)', m => fmtSigned(m.contTempoErrPct, 2)),
+    metric('Drift (ms per tap)', m => fmtSigned(m.contDrift, 2)),
+  );
+  table({ head: [['', ...rounds.map(r => name(r.t))]], body, columnStyles: { 0: { textColor: MUTED, cellWidth: 70 } } });
+
+  heading('What the numbers mean', 11);
+  doc.setFont('helvetica', 'normal'); doc.setFontSize(8.5); doc.setTextColor(...INK);
+  const notes = [
+    'Asynchrony: tap time minus click time. Negative means the tap came before the click.',
+    'Variability (CV): standard deviation of the intervals between taps divided by their mean, in percent. Lower is steadier.',
+    'Tempo error: how much slower (+) or faster (-) the taps were than the beat after the clicks stopped.',
+    `The first ${s.config.excludeInitial} clicks of each round are not counted. Intervals under half or over 1.5 times the target (missed or double taps) are left out of the interval statistics.`,
+  ];
+  for (const n of notes) { const lines = doc.splitTextToSize(n, W); ensure(lines.length * 4 + 1); doc.text(lines, M, y + 3); y += lines.length * 4 + 1.5; }
+
+  // Appendix: every tap
+  doc.addPage(); y = M;
+  heading('Tap-by-tap data');
+  for (const { t } of rounds) {
+    const a = analyzeTrial(t), t0 = t.beatPerf[0];
+    heading(name(t), 10);
+    table({
+      head: [['Tap', 'Phase', 'Time (s)', 'Nearest click', 'Asynchrony (ms)', 'Interval (ms)']],
+      body: a.taps.map(p => [String(p.n), { pre: 'before start', sync: 'with clicks', continuation: 'clicks stopped', post: 'after end' }[p.phase],
+        ((p.t - t0) / 1000).toFixed(3), p.beat ? String(p.beat) : '', p.phase === 'sync' ? fmtSigned(p.async) : '', fin(p.iti) ? fmt(p.iti) : '']),
+      styles: { font: 'helvetica', fontSize: 8, cellPadding: 1.2, textColor: INK, lineColor: LINE, lineWidth: { bottom: 0.1 } },
+    });
+  }
+
+  const pages = doc.getNumberOfPages();
+  for (let i = 1; i <= pages; i++) {
+    doc.setPage(i); doc.setFont('helvetica', 'normal'); doc.setFontSize(8); doc.setTextColor(...MUTED);
+    doc.text(pdfText(`${s.participant.name} · session ${s.sessionId}`), M, PH - 8);
+    doc.text(`Page ${i} of ${pages}`, PW - M, PH - 8, { align: 'right' });
+  }
+  return doc;
+}
+function drawTimelinePdf(doc, t, x0, y0, w, h, C) {
+  const d = timelineData(t), L = 16, yC = y0 + 5, yT = y0 + 13, yA = y0 + 19;
+  const x = v => x0 + L + (v - d.lo) / (d.hi - d.lo) * (w - L);
+  if (d.contStart != null) { doc.setFillColor(241, 239, 233); doc.rect(x(d.contStart), y0, x(d.end) - x(d.contStart), yA - y0 - 1, 'F'); }
+  doc.setFont('helvetica', 'normal'); doc.setFontSize(7); doc.setTextColor(...C.MUTED);
+  doc.text('Clicks', x0, yC + 1); doc.text('Taps', x0, yT + 1);
+  doc.setDrawColor(...C.LINE); doc.setLineWidth(0.2); doc.line(x0 + L, yC, x0 + w, yC); doc.line(x0 + L, yT, x0 + w, yT);
+  doc.setDrawColor(...C.INK); doc.setLineWidth(0.45);
+  d.clicks.forEach(v => doc.line(x(v), yC - 2.6, x(v), yC + 2.6));
+  doc.setDrawColor(169, 165, 155); doc.setLineWidth(0.3); doc.setLineDashPattern([0.6, 0.6], 0);
+  d.silent.forEach(v => doc.line(x(v), yC - 2.6, x(v), yC + 2.6));
+  doc.setLineDashPattern([], 0);
+  doc.setFillColor(...C.ACCENT); d.taps.forEach(v => doc.circle(x(v), yT, 0.9, 'F'));
+  doc.setDrawColor(201, 197, 187); doc.setLineWidth(0.2); doc.line(x0 + L, yA, x0 + w, yA);
+  const step = niceStep(d.hi - d.lo);
+  for (let v = Math.ceil(d.lo / step) * step; v <= d.hi; v += step) { doc.line(x(v), yA, x(v), yA + 1); doc.text(`${v} s`, x(v), yA + 4, { align: 'center' }); }
+}
+
+$('#dl-pdf').addEventListener('click', async () => {
+  if (!session) return;
+  const btn = $('#dl-pdf'), label = $('#pdf-label'), st = $('#pdf-status');
+  btn.disabled = true; label.textContent = 'Preparing PDF…'; st.textContent = ''; st.classList.remove('text-red-700');
+  try {
+    await loadPdfLibs();
+    buildPdf(session).save(pdfName(session));
+    downloaded = true;
+  } catch (err) {
+    st.textContent = 'Could not create the PDF. Check the internet connection and try again.'; st.classList.add('text-red-700');
+  } finally { btn.disabled = false; label.textContent = 'Download PDF'; }
 });
-$('#dl-raw').addEventListener('click', () => {
-  download(fileBase(session) + '_raw.csv', toCSV(rawRows(session), RAW_COLS)); downloaded = true;
-});
+
 /* =========================================================================
    Email results (via Google Apps Script web app — see send-results.gs)
    ========================================================================= */
@@ -1099,10 +1331,8 @@ function buildPayload(s) {
   ]);
   return {
     app: APP_ID, version: APP_VERSION, summary: row,
-    dataCsv: toCSV([row], Object.keys(row)), dataFile: base + '_data.csv',
-    rawCsv: toCSV(rawRows(s), RAW_COLS), rawFile: base + '_raw.csv',
     overview: {
-      participant: [['Name', p.name], ['Participant ID', p.id], ['Age', p.age], ['Musical training (years)', p.musicalTrainingYears],
+      participant: [['Name', p.name], ['Age', p.age], ['Email', p.email], ['Plays an instrument', yesNo(p.playsInstrument)],
                     ['PROMS Accent score', s.proms.accent], ['PROMS Tempo score', s.proms.tempo]],
       tappingColumns: columns, tappingRows: rows,
       session: [['Session ID', s.sessionId], ['Completed', s.completedAt ? new Date(s.completedAt).toLocaleString('en-GB') : ''],
@@ -1135,7 +1365,13 @@ $('#send-results').addEventListener('click', async () => {
   if (!config.resultsUrl) { setSendUI('error', 'Sending isn\'t set up on this computer yet. Please tell the researcher, or download the data below.'); return; }
   setSendUI('sending', '');
   try {
-    await postResults(config.resultsUrl, buildPayload(session));
+    const payload = buildPayload(session);
+    try { // attach the same PDF the participant can download
+      await loadPdfLibs();
+      payload.pdfBase64 = buildPdf(session).output('datauristring').split(',')[1];
+      payload.pdfFile = pdfName(session);
+    } catch (e) { /* send without the PDF rather than not at all */ }
+    await postResults(config.resultsUrl, payload);
     session.sentAt = new Date().toISOString(); persistSession();
     setSendUI('sent', 'The results were emailed to the research team. Thank you!');
   } catch (err) {
@@ -1165,6 +1401,7 @@ $('#new-participant').addEventListener('click', () => {
   $('#welcome-form').reset(); $('#bg-form').reset();
   ['#proms-accent', '#proms-tempo'].forEach(s => { $(s).value = ''; });
   $('#proms-done').checked = false; $('#proms-next').disabled = true;
+  ['p-name', 'p-age', 'p-email', 'proms-accent', 'proms-tempo', 'p-instrument'].forEach(id => fieldError(id, false));
   setSendUI('idle', '');
   go('welcome');
 });
@@ -1240,11 +1477,13 @@ $('#sess-clear').addEventListener('click', () => {
    Init
    ========================================================================= */
 if (isTouch) { $$('.touch-only').forEach(el => el.classList.remove('hidden')); }
+// Researcher settings only show when the page is opened with ?researcher in the address.
+if (new URLSearchParams(location.search).has('researcher')) $('#researcher').hidden = false;
 applyConfig(config, false);
 renderStepper(0);
 
 // Exposed for testing / offline re-analysis in the browser console.
-window.TappingStudy = { analyzeTrial, summaryRow, rawRows, toCSV, RAW_COLS, AudioEngine, get session() { return session; }, get run() { return Run.active; }, version: APP_VERSION };
+window.TappingStudy = { analyzeTrial, buildPdf, timelineData, summaryRow, rawRows, toCSV, RAW_COLS, AudioEngine, get session() { return session; }, get run() { return Run.active; }, version: APP_VERSION };
 })();
 </script>
 </body>
