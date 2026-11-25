@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Rhythm Perception &amp; Tapping Study · Systematic Musicology</title>
+<!--
+  Rhythm Perception & Tapping Study
+  Part 1: PROMS Accent + Tempo subtests (external site)
+  Part 2: synchronization–continuation finger-tapping task (built in)
+
+  • Single self-contained file: no external scripts, fonts or audio files, so it also runs offline
+    (double-click to open, or upload to any static host such as GitHub Pages).
+  • Styles are pre-compiled Tailwind CSS v3. If you add Tailwind classes that are not already used
+    in this file, also add  <script src="https://cdn.tailwindcss.com"></script>  to the <head>.
+  • Researcher settings: "Researcher settings" at the bottom of the first screen, or URL parameters:
+        ?tempos=100,120  reps=1  sync=16  cont=1  contBeats=16  random=1
+         practice=1  practiceBpm=110  practiceBeats=8  exclude=4  proms=<https link>
+    e.g. index.html?tempos=135,150,160&cont=1
+  • Esc during a round aborts it (nothing is saved) so it can be restarted.
+  • Emailing results: deploy send-results.gs as a Google Apps Script web app (steps are at the top
+    of that file) and paste its URL into RESULTS_URL at the top of the script section below, or into
+    "Researcher settings → Email results" on a single computer.
+-->
+<style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.card{border-radius:1rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:1.5rem;--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}@media (min-width:640px){.card{padding:2.25rem}}.eyebrow{font-size:.75rem;line-height:1rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1))}.h-title{margin-top:.5rem;font-family:Iowan Old Style,Palatino Linotype,Book Antiqua,Palatino,Georgia,serif;font-size:1.875rem;line-height:2.25rem;line-height:1.25;--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}@media (min-width:640px){.h-title{font-size:2.15rem}}.prose-body{font-size:.975rem;line-height:1.625;color:rgba(31,35,40,.9)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:.5rem;padding:.625rem 1.25rem;font-size:.875rem;line-height:1.25rem;font-weight:600;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.btn:focus{outline:2px solid transparent;outline-offset:2px}.btn:focus-visible{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-opacity:1;--tw-ring-color:rgb(30 91 87/var(--tw-ring-opacity,1));--tw-ring-offset-width:2px}.btn:disabled{cursor:not-allowed;opacity:.4}.btn-primary{--tw-bg-opacity:1;background-color:rgb(30 91 87/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.btn-primary:hover{--tw-bg-opacity:1;background-color:rgb(21 66 63/var(--tw-bg-opacity,1))}.btn-primary:hover:disabled{--tw-bg-opacity:1;background-color:rgb(30 91 87/var(--tw-bg-opacity,1))}.btn-secondary{border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.btn-secondary:hover{--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1))}.btn-quiet{padding-left:.5rem;padding-right:.5rem;--tw-text-opacity:1;color:rgb(103 107 114/var(--tw-text-opacity,1))}.btn-quiet:hover,.label{--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.label{display:block;font-size:.875rem;line-height:1.25rem;font-weight:500}.opt{font-weight:400;--tw-text-opacity:1;color:rgb(103 107 114/var(--tw-text-opacity,1))}.field{margin-top:.375rem;display:block;width:100%;border-radius:.5rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:.625rem .875rem;font-size:1rem;line-height:1.5rem;--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.field::-moz-placeholder{color:hsla(218,5%,43%,.5)}.field::placeholder{color:hsla(218,5%,43%,.5)}.field:focus{--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1));outline:2px solid transparent;outline-offset:2px;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(30,91,87,.2)}.field-sm{margin-top:.25rem;display:block;width:100%;border-radius:.375rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:.5rem .75rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.field-sm:focus{--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1));outline:2px solid transparent;outline-offset:2px;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-color:rgba(30,91,87,.2)}.check{height:1.25rem;width:1.25rem;flex-shrink:0;border-radius:.25rem;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1));accent-color:#1e5b57}.steps-list{margin-top:1rem}.steps-list>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.steps-list li{display:flex;gap:.75rem}.step-num{margin-top:.125rem;display:grid;height:1.5rem;width:1.5rem;flex-shrink:0;place-items:center;border-radius:9999px;--tw-bg-opacity:1;background-color:rgb(227 238 236/var(--tw-bg-opacity,1));font-size:.75rem;line-height:1rem;font-weight:600;--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1))}.note{border-radius:.75rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1));--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1));padding:.875rem 1rem;font-size:.875rem;line-height:1.25rem;line-height:1.625;color:rgba(31,35,40,.85)}.pointer-events-none{pointer-events:none}.static{position:static}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.mx-auto{margin-left:auto;margin-right:auto}.my-10{margin-top:2.5rem;margin-bottom:2.5rem}.mt-0{margin-top:0}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline{display:inline}.flex{display:flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-56{height:14rem}.h-6{height:1.5rem}.h-px{height:1px}.min-h-\[1\.25rem\]{min-height:1.25rem}.min-h-\[1\.5rem\]{min-height:1.5rem}.min-h-\[2\.75rem\]{min-height:2.75rem}.min-h-screen{min-height:100vh}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-56{width:14rem}.w-6{width:1.5rem}.w-full{width:100%}.min-w-0{min-width:0}.min-w-\[34rem\]{min-width:34rem}.max-w-3xl{max-width:48rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.grid-cols-\[auto\2c 1fr\]{grid-template-columns:auto 1fr}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.place-items-center{place-items:center}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-x-6{-moz-column-gap:1.5rem;column-gap:1.5rem}.gap-y-1{row-gap:.25rem}.gap-y-3{row-gap:.75rem}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-line>:not([hidden])~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(227 224 216/var(--tw-divide-opacity,1))}.overflow-x-auto{overflow-x:auto}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-accent{--tw-border-opacity:1;border-color:rgb(30 91 87/var(--tw-border-opacity,1))}.border-line{--tw-border-opacity:1;border-color:rgb(227 224 216/var(--tw-border-opacity,1))}.bg-accent{--tw-bg-opacity:1;background-color:rgb(30 91 87/var(--tw-bg-opacity,1))}.bg-accent-soft{--tw-bg-opacity:1;background-color:rgb(227 238 236/var(--tw-bg-opacity,1))}.bg-ink\/80{background-color:rgba(31,35,40,.8)}.bg-line{--tw-bg-opacity:1;background-color:rgb(227 224 216/var(--tw-bg-opacity,1))}.bg-paper{--tw-bg-opacity:1;background-color:rgb(246 245 241/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/50{background-color:hsla(0,0%,100%,.5)}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:.25rem}.pb-12{padding-bottom:3rem}.pb-6{padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.pl-1{padding-left:.25rem}.pl-4{padding-left:1rem}.pt-2{padding-top:.5rem}.pt-3{padding-top:.75rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.align-bottom{vertical-align:bottom}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.font-sans{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}.font-serif{font-family:Iowan Old Style,Palatino Linotype,Book Antiqua,Palatino,Georgia,serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[0\.68rem\]{font-size:.68rem}.text-\[0\.7rem\]{font-size:.7rem}.text-\[0\.975rem\]{font-size:.975rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-\[0\.12em\]{letter-spacing:.12em}.tracking-\[0\.16em\]{letter-spacing:.16em}.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-wide{letter-spacing:.025em}.text-accent{--tw-text-opacity:1;color:rgb(30 91 87/var(--tw-text-opacity,1))}.text-ink{--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.text-ink\/70{color:rgba(31,35,40,.7)}.text-ink\/80{color:rgba(31,35,40,.8)}.text-muted{--tw-text-opacity:1;color:rgb(103 107 114/var(--tw-text-opacity,1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.text-warn{--tw-text-opacity:1;color:rgb(138 90 18/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-40{opacity:.4}.shadow-\[inset_0_1px_0_rgba\(255\2c 255\2c 255\2c \.8\)\2c 0_1px_2px_rgba\(0\2c 0\2c 0\2c \.04\)\]{--tw-shadow:inset 0 1px 0 hsla(0,0%,100%,.8),0 1px 2px rgba(0,0,0,.04);--tw-shadow-colored:inset 0 1px 0 var(--tw-shadow-color),0 1px 2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.ring{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.blur{--tw-blur:blur(8px)}.blur,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.hover\:text-ink:hover{--tw-text-opacity:1;color:rgb(31 35 40/var(--tw-text-opacity,1))}.hover\:text-red-800:hover{--tw-text-opacity:1;color:rgb(153 27 27/var(--tw-text-opacity,1))}@media (min-width:640px){.sm\:col-span-2{grid-column:span 2/span 2}.sm\:my-12{margin-top:3rem;margin-bottom:3rem}.sm\:inline{display:inline}.sm\:h-64{height:16rem}.sm\:w-64{width:16rem}.sm\:w-7{width:1.75rem}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:px-7{padding-left:1.75rem;padding-right:1.75rem}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:py-12{padding-bottom:3rem}.sm\:pt-12,.sm\:py-12{padding-top:3rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}}</style>
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  body { touch-action: manipulation; }
+  .tap-pad { -webkit-tap-highlight-color: transparent; touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+  kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .8em; padding: .12em .5em; border: 1px solid #d6d3ca; border-bottom-width: 2px; border-radius: .4rem; background: #fff; color: #1f2328; white-space: nowrap; }
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(90deg); }
+  .num { font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body class="min-h-screen bg-paper font-sans text-ink antialiased">
+<div class="mx-auto flex min-h-screen max-w-3xl flex-col px-5 sm:px-8">
+
+  <header class="pb-6 pt-8 sm:pt-12">
+    <p class="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-muted">Systematic Musicology · Erasmus University College</p>
+    <nav aria-label="Progress" class="mt-5">
+      <ol id="stepper" class="flex flex-wrap items-center gap-2 text-sm"></ol>
+    </nav>
+  </header>
+
+  <main class="flex-1 pb-12">
+
+    <!-- ============ 1. WELCOME ============ -->
+    <section id="step-welcome" data-step="welcome" class="step">
+      <div class="card">
+        <p class="eyebrow">Research study</p>
+        <h1 class="h-title" tabindex="-1">Rhythm perception and finger tapping</h1>
+        <div class="prose-body mt-4 space-y-4">
+          <p>Thank you for taking part in our study on how people perceive and move to rhythm. The session has two parts:</p>
+          <ol class="steps-list">
+            <li><span class="step-num">1</span><span><strong>Two short listening tests</strong> (Accent and Tempo) from the PROMS test battery, on an external website.</span></li>
+            <li><span class="step-num">2</span><span><strong>A finger-tapping task</strong> on this page: you tap along with a steady click.</span></li>
+          </ol>
+          <p>Please use headphones or the lab speakers, in a quiet place. Participation is voluntary and you can stop at any time.</p>
+        </div>
+
+        <form id="welcome-form" class="mt-8 space-y-5" novalidate>
+          <div>
+            <label for="p-name" class="label">Full name</label>
+            <input id="p-name" name="name" type="text" autocomplete="name" class="field" required>
+            <p id="p-name-err" class="mt-1.5 hidden text-sm text-red-700">Please enter your full name to continue.</p>
+          </div>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label for="p-id" class="label">Participant ID <span class="opt">(optional)</span></label>
+              <input id="p-id" name="pid" type="text" autocomplete="off" placeholder="e.g. P07" class="field">
+            </div>
+            <div>
+              <label for="p-age" class="label">Age <span class="opt">(optional)</span></label>
+              <input id="p-age" name="age" type="number" inputmode="numeric" min="10" max="110" class="field">
+            </div>
+          </div>
+          <div class="flex justify-end pt-2">
+            <button type="submit" class="btn btn-primary">Continue</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Researcher settings (low emphasis) -->
+      <details id="researcher" class="group mt-6 rounded-2xl border border-line bg-white/50 px-5 py-4 text-sm sm:px-7">
+        <summary class="flex cursor-pointer select-none items-center gap-2 font-medium text-muted hover:text-ink">
+          <svg class="chev h-3.5 w-3.5 transition-transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+          Researcher settings
+        </summary>
+        <div class="mt-5 space-y-6">
+          <div class="grid gap-4 sm:grid-cols-3">
+            <label class="block sm:col-span-2"><span class="text-xs font-medium text-muted">Test tempos (BPM, comma-separated)</span>
+              <input id="cfg-tempos" type="text" class="field-sm num"></label>
+            <label class="block"><span class="text-xs font-medium text-muted">Repetitions per tempo</span>
+              <input id="cfg-reps" type="number" min="1" max="10" class="field-sm num"></label>
+            <label class="block"><span class="text-xs font-medium text-muted">Synchronization beats</span>
+              <input id="cfg-sync" type="number" min="4" max="200" class="field-sm num"></label>
+            <label class="block"><span class="text-xs font-medium text-muted">Continuation beats</span>
+              <input id="cfg-contBeats" type="number" min="2" max="200" class="field-sm num"></label>
+            <label class="block"><span class="text-xs font-medium text-muted">Initial beats excluded from metrics</span>
+              <input id="cfg-exclude" type="number" min="0" max="50" class="field-sm num"></label>
+            <label class="block"><span class="text-xs font-medium text-muted">Practice tempo (BPM)</span>
+              <input id="cfg-practiceBpm" type="number" min="30" max="300" class="field-sm num"></label>
+            <label class="block sm:col-span-2"><span class="text-xs font-medium text-muted">PROMS link</span>
+              <input id="cfg-proms" type="url" class="field-sm"></label>
+          </div>
+          <div class="flex flex-wrap gap-x-6 gap-y-3">
+            <label class="flex items-center gap-2"><input id="cfg-cont" type="checkbox" class="check"> Continuation phase</label>
+            <label class="flex items-center gap-2"><input id="cfg-random" type="checkbox" class="check"> Randomize round order</label>
+            <label class="flex items-center gap-2"><input id="cfg-practice" type="checkbox" class="check"> Practice round</label>
+          </div>
+          <p id="cfg-url-note" class="hidden text-xs text-warn">Settings in the page address (URL parameters) are active and take priority over saved settings.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <button id="cfg-save" type="button" class="btn btn-primary">Save settings</button>
+            <button id="cfg-reset" type="button" class="btn btn-secondary">Reset to defaults</button>
+            <span id="cfg-saved" class="text-xs text-accent opacity-0 transition-opacity">Saved</span>
+          </div>
+          <label class="block"><span class="text-xs font-medium text-muted">Link with these settings (bookmark it on the lab computer, or send it to remote participants)</span>
+            <div class="mt-1 flex gap-2"><input id="cfg-link" type="text" readonly class="field-sm mt-0 font-mono text-xs"><button id="cfg-copy" type="button" class="btn btn-secondary px-3 py-1.5">Copy</button></div></label>
+
+          <div class="border-t border-line pt-5">
+            <p class="font-medium text-ink">Email results</p>
+            <p class="mt-1 text-muted">Web app URL of the Google Apps Script that emails each participant's results (see <span class="font-mono text-xs">send-results.gs</span>).</p>
+            <div class="mt-2 flex flex-wrap gap-2">
+              <input id="cfg-results" type="url" placeholder="https://script.google.com/macros/s/…/exec" class="field-sm mt-0 min-w-0 flex-1 font-mono text-xs">
+              <button id="cfg-test-send" type="button" class="btn btn-secondary px-3 py-1.5">Send test email</button>
+            </div>
+            <p id="cfg-send-status" class="mt-2 text-xs text-muted"></p>
+          </div>
+
+          <div class="border-t border-line pt-5">
+            <p class="font-medium text-ink">Sessions saved in this browser</p>
+            <p id="sess-count" class="mt-1 text-muted">—</p>
+            <div class="mt-3 flex flex-wrap gap-3">
+              <button id="sess-dl-summary" type="button" class="btn btn-secondary">Download all · summary CSV</button>
+              <button id="sess-dl-raw" type="button" class="btn btn-secondary">Download all · raw CSV</button>
+              <button id="sess-clear" type="button" class="btn btn-quiet text-red-700 hover:text-red-800">Delete saved sessions</button>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ============ 2. PROMS ============ -->
+    <section id="step-proms" data-step="proms" class="step hidden">
+      <div class="card">
+        <p class="eyebrow">Part 1</p>
+        <h2 class="h-title" tabindex="-1">PROMS listening tests</h2>
+        <div class="prose-body mt-4">
+          <p>You'll do two short listening tests on the PROMS website.</p>
+          <ol class="steps-list">
+            <li><span class="step-num">1</span><span>Click the button below. PROMS opens in a <strong>new tab</strong> — keep this page open.</span></li>
+            <li><span class="step-num">2</span><span>Complete <strong>only the Accent and Tempo tests</strong>. You can skip the others.</span></li>
+            <li><span class="step-num">3</span><span>When you've finished, come back to this tab.</span></li>
+          </ol>
+          <p class="mt-4 text-sm text-muted">Not sure which test to start? Ask the researcher.</p>
+        </div>
+        <div class="mt-6">
+          <a id="proms-link" href="https://musemap.org/resources/proms" target="_blank" rel="noopener noreferrer" class="btn btn-primary px-6 py-3 text-base">
+            Open the PROMS website
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 4H4v12h12v-4M11 3h6v6M17 3l-8 8"/></svg>
+          </a>
+        </div>
+
+        <div class="mt-8 border-t border-line pt-6">
+          <p class="label">Your scores <span class="opt">(optional)</span></p>
+          <p class="mt-1 text-sm text-muted">If PROMS shows your scores at the end, you can type them here.</p>
+          <div class="mt-3 grid gap-5 sm:grid-cols-2">
+            <div><label for="proms-accent" class="label">Accent score</label><input id="proms-accent" type="text" inputmode="decimal" autocomplete="off" class="field num"></div>
+            <div><label for="proms-tempo" class="label">Tempo score</label><input id="proms-tempo" type="text" inputmode="decimal" autocomplete="off" class="field num"></div>
+          </div>
+        </div>
+
+        <label class="mt-8 flex cursor-pointer items-start gap-3 rounded-xl border border-line bg-paper p-4">
+          <input id="proms-done" type="checkbox" class="check mt-0.5">
+          <span class="text-[0.975rem] font-medium">I have completed the Accent and Tempo tests</span>
+        </label>
+
+        <div class="mt-6 flex items-center justify-between">
+          <button id="proms-back" type="button" class="btn btn-quiet">← Back</button>
+          <button id="proms-next" type="button" class="btn btn-primary" disabled>Continue to Part 2</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. TAPPING INSTRUCTIONS ============ -->
+    <section id="step-tapIntro" data-step="tapIntro" class="step hidden">
+      <div class="card">
+        <p class="eyebrow">Part 2</p>
+        <h2 class="h-title" tabindex="-1">Finger-tapping task</h2>
+        <div class="prose-body mt-4 space-y-4">
+          <p>You'll hear a steady click. Tap along with it, in time, by pressing the <kbd>Space</kbd> bar<span class="touch-only hidden"> or tapping the large circle</span>.</p>
+          <p class="cont-only">After a while the clicks stop. <strong>Keep tapping at the same speed</strong> until the screen says <em>Done</em>.</p>
+          <ul class="space-y-2 pl-1">
+            <li class="flex gap-3"><span class="text-accent">—</span><span>Start tapping as soon as you've found the beat.</span></li>
+            <li class="flex gap-3"><span class="text-accent">—</span><span>Use one finger of your dominant hand and keep the movement relaxed.</span></li>
+            <li class="flex gap-3"><span class="text-accent">—</span><span>Try not to count out loud or tap your foot.</span></li>
+          </ul>
+        </div>
+
+        <div class="note mt-6">
+          <p><strong>Before you start:</strong> use wired headphones or the lab speakers. Wireless (Bluetooth) headphones add a delay that affects the results.</p>
+          <div class="mt-3 flex flex-wrap items-center gap-3">
+            <button id="sound-test" type="button" class="btn btn-secondary py-2">
+              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9 4L5 8H2v4h3l4 4V4zm4.5 2.5a5 5 0 010 7M15.8 4.2a8 8 0 010 11.6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+              Play test sound
+            </button>
+            <span class="text-sm text-muted">Set the volume to a comfortable level.</span>
+          </div>
+        </div>
+
+        <p id="tap-plan-text" class="prose-body mt-6"></p>
+
+        <div class="mt-6 flex items-center justify-between">
+          <button id="tap-back" type="button" class="btn btn-quiet">← Back</button>
+          <button id="tap-start" type="button" class="btn btn-primary">Start</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3b. TRIAL ============ -->
+    <section id="step-trial" data-step="trial" class="step hidden">
+      <div class="card flex flex-col items-center px-6 py-10 text-center sm:py-12">
+        <p id="trial-label" class="text-xs font-semibold uppercase tracking-[0.16em] text-muted">Practice round</p>
+        <h2 id="trial-status" class="mt-3 font-serif text-2xl text-ink sm:text-3xl" aria-live="polite">Get ready</h2>
+        <p id="trial-sub" class="mt-2 min-h-[1.5rem] max-w-md text-sm text-muted"></p>
+
+        <div class="relative my-10 sm:my-12">
+          <span id="tap-ring" class="pointer-events-none absolute inset-0 rounded-full border-2 border-accent opacity-0"></span>
+          <div id="tap-pad" role="button" aria-label="Tap area" class="tap-pad relative grid h-56 w-56 cursor-pointer place-items-center rounded-full border border-line bg-white shadow-[inset_0_1px_0_rgba(255,255,255,.8),0_1px_2px_rgba(0,0,0,.04)] transition-opacity sm:h-64 sm:w-64">
+            <span id="tap-dot" class="h-5 w-5 rounded-full bg-ink/80"></span>
+          </div>
+        </div>
+
+        <p class="text-sm text-muted"><span class="key-only"><kbd>Space</kbd> bar</span><span class="touch-only hidden"> or tap the circle</span></p>
+        <div id="trial-actions" class="mt-8 flex min-h-[2.75rem] flex-wrap justify-center gap-3"></div>
+        <p id="trial-enter-hint" class="mt-3 hidden text-xs text-muted">or press <kbd>Enter</kbd></p>
+      </div>
+    </section>
+
+    <!-- ============ 4a. BACKGROUND ============ -->
+    <section id="step-background" data-step="background" class="step hidden">
+      <div class="card">
+        <p class="eyebrow">Almost done</p>
+        <h2 class="h-title" tabindex="-1">One last question</h2>
+        <form id="bg-form" class="mt-6 space-y-5" novalidate>
+          <div class="max-w-sm">
+            <label for="p-training" class="label">Years of formal musical training <span class="opt">(optional)</span></label>
+            <p class="mt-1 text-sm text-muted">Lessons on an instrument or voice. Enter 0 if none.</p>
+            <input id="p-training" type="number" inputmode="decimal" min="0" max="80" step="0.5" class="field num">
+          </div>
+          <div class="flex justify-end pt-2">
+            <button type="submit" class="btn btn-primary">Finish</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ 4b. RESULTS ============ -->
+    <section id="step-results" data-step="results" class="step hidden">
+      <div class="card">
+        <p class="eyebrow">Complete</p>
+        <h2 class="h-title" tabindex="-1">Thank you!</h2>
+        <p class="prose-body mt-3">You've finished this part of the study. Please let the researcher know you're done.</p>
+
+        <div class="mt-8">
+          <h3 class="font-serif text-xl">Tapping results</h3>
+          <div class="mt-3 overflow-x-auto rounded-xl border border-line">
+            <table class="num w-full min-w-[34rem] text-left text-sm">
+              <thead id="res-head" class="bg-paper text-xs uppercase tracking-wide text-muted"></thead>
+              <tbody id="res-body" class="divide-y divide-line"></tbody>
+            </table>
+          </div>
+          <details class="mt-3 text-sm text-muted">
+            <summary class="flex cursor-pointer items-center gap-1.5 hover:text-ink">
+              <svg class="chev h-3 w-3 transition-transform" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+              What do these numbers mean?
+            </summary>
+            <dl class="mt-3 space-y-2 pl-4 leading-relaxed">
+              <div><dt class="inline font-medium text-ink">Asynchrony</dt> <dd class="inline">— average time between your tap and the click. Negative means you tapped slightly before the click; most people do this by a few tens of milliseconds.</dd></div>
+              <div><dt class="inline font-medium text-ink">SD</dt> <dd class="inline">— standard deviation: how much that timing varied from tap to tap. Lower is more consistent.</dd></div>
+              <div><dt class="inline font-medium text-ink">Variability</dt> <dd class="inline">— coefficient of variation (CV): variation in the time between your taps, as a percentage of their average. Lower is steadier.</dd></div>
+              <div class="cont-only"><dt class="inline font-medium text-ink">Tempo after clicks stopped</dt> <dd class="inline">— your tapping speed once the clicks stopped, and how much faster (+) or slower (−) that was than the original beat.</dd></div>
+            </dl>
+          </details>
+        </div>
+
+        <div class="mt-8 rounded-xl border border-line bg-paper p-5">
+          <h3 class="text-sm font-semibold">Data <span class="font-normal text-muted">(for the researcher)</span></h3>
+          <dl id="res-meta" class="mt-3 grid grid-cols-[auto,1fr] gap-x-6 gap-y-1 text-sm"></dl>
+          <div class="mt-5 flex flex-wrap items-center gap-3">
+            <button id="send-results" type="button" class="btn btn-primary px-6 py-3 text-base">
+              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5h14v10H3z M3 5l7 6 7-6"/></svg>
+              <span id="send-label">Send the results to the students</span>
+            </button>
+          </div>
+          <p id="send-status" class="mt-2 min-h-[1.25rem] text-sm text-muted" aria-live="polite"></p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <button id="dl-summary" type="button" class="btn btn-secondary">
+              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3v10m0 0l-4-4m4 4l4-4M4 16h12"/></svg>
+              Download data (CSV)
+            </button>
+            <button id="dl-raw" type="button" class="btn btn-secondary">
+              <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3v10m0 0l-4-4m4 4l4-4M4 16h12"/></svg>
+              Download raw timestamps (CSV)
+            </button>
+          </div>
+          <p class="mt-3 text-xs leading-relaxed text-muted"><strong class="font-medium text-ink/80">Data</strong>: one row for this participant with all metrics and PROMS scores. <strong class="font-medium text-ink/80">Raw timestamps</strong>: one row per click and per tap, for re-analysis.</p>
+          <p id="backup-note" class="mt-2 text-xs text-muted"></p>
+        </div>
+
+        <div class="mt-6 flex justify-end">
+          <button id="new-participant" type="button" class="btn btn-quiet">Start a new participant →</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pb-8 text-xs text-muted">Systematic Musicology research project · Erasmus University College, Rotterdam</footer>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* =========================================================================
+   Configuration
+   ========================================================================= */
+/* ▼ EMAIL SETUP: paste the Google Apps Script web app URL between the quotes (see send-results.gs). */
+const RESULTS_URL = 'https://script.google.com/macros/s/AKfycbz3CkbVvJH0z6-W0tV9YBXVufVupUdO-ABVlQKjitnWzn9GRJnzcbJzZ9U9X4IJSszR/exec';
+
+const APP_VERSION = '1.1';
+const APP_ID = 'rhythm-tapping-study';
+const DEFAULTS = Object.freeze({
+  tempos: [100, 120],     // test tempos (BPM)
+  reps: 1,                // repetitions of each tempo
+  syncBeats: 16,          // audible beats (synchronization phase)
+  continuation: true,     // silent continuation phase on/off
+  contBeats: 16,          // silent beats (continuation phase)
+  randomize: true,        // randomize order of test rounds
+  practice: true,         // one practice round first
+  practiceBpm: 110,
+  practiceBeats: 8,       // practice: sync beats (and continuation beats, if on)
+  excludeInitial: 4,      // first N sync beats excluded from metrics
+  leadInMs: 1500,         // silence between pressing Start and the first click
+  promsUrl: 'https://musemap.org/resources/proms',
+  resultsUrl: RESULTS_URL, // where "Send the results" posts to (Google Apps Script web app)
+});
+const KEYS = { config: 'smus-tapping-config-v1', sessions: 'smus-tapping-sessions-v1' };
+
+const store = {
+  get(k, fb) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : fb; } catch (e) { return fb; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } },
+  del(k) { try { localStorage.removeItem(k); } catch (e) { /* ignore */ } },
+};
+
+function toBool(v, fb) {
+  if (typeof v === 'boolean') return v;
+  const s = String(v).trim().toLowerCase();
+  if (['1', 'true', 'yes', 'on'].includes(s)) return true;
+  if (['0', 'false', 'no', 'off'].includes(s)) return false;
+  return fb;
+}
+function toNum(v, min, max, int, fb) {
+  let n = Number(v);
+  if (v === '' || v == null || !Number.isFinite(n)) return fb;
+  if (int) n = Math.round(n);
+  return Math.min(max, Math.max(min, n));
+}
+const isResultsUrl = u => /^https:\/\/script\.google\.com\/(macros|a\/macros\/[^/\s]+)\/s\/[\w-]+\/exec$/.test(u);
+function sanitizeConfig(c) {
+  const o = { ...DEFAULTS, tempos: [...DEFAULTS.tempos] };
+  if (c.tempos != null) {
+    const list = (Array.isArray(c.tempos) ? c.tempos : String(c.tempos).split(/[\s,;]+/))
+      .map(x => toNum(x, 30, 300, false, null)).filter(x => x != null);
+    const uniq = [...new Set(list)];
+    if (uniq.length) o.tempos = uniq;
+  }
+  o.reps = toNum(c.reps, 1, 10, true, o.reps);
+  o.syncBeats = toNum(c.syncBeats, 4, 200, true, o.syncBeats);
+  o.continuation = toBool(c.continuation ?? o.continuation, o.continuation);
+  o.contBeats = toNum(c.contBeats, 2, 200, true, o.contBeats);
+  o.randomize = toBool(c.randomize ?? o.randomize, o.randomize);
+  o.practice = toBool(c.practice ?? o.practice, o.practice);
+  o.practiceBpm = toNum(c.practiceBpm, 30, 300, false, o.practiceBpm);
+  o.practiceBeats = toNum(c.practiceBeats, 4, 64, true, o.practiceBeats);
+  o.excludeInitial = Math.min(toNum(c.excludeInitial, 0, 50, true, o.excludeInitial), o.syncBeats - 2);
+  if (typeof c.promsUrl === 'string' && /^https:\/\/\S+$/i.test(c.promsUrl.trim())) o.promsUrl = c.promsUrl.trim();
+  if (typeof c.resultsUrl === 'string' && isResultsUrl(c.resultsUrl.trim())) o.resultsUrl = c.resultsUrl.trim();
+  return o;
+}
+const URL_PARAMS = { tempos: 'tempos', reps: 'reps', sync: 'syncBeats', cont: 'continuation', contBeats: 'contBeats',
+  random: 'randomize', practice: 'practice', practiceBpm: 'practiceBpm', practiceBeats: 'practiceBeats',
+  exclude: 'excludeInitial', proms: 'promsUrl', send: 'resultsUrl' };
+function configFromURL() {
+  const p = new URLSearchParams(location.search), c = {};
+  for (const [param, key] of Object.entries(URL_PARAMS)) if (p.has(param)) c[key] = p.get(param);
+  return c;
+}
+const urlConfig = configFromURL();
+const hasUrlConfig = Object.keys(urlConfig).length > 0;
+let config = sanitizeConfig({ ...store.get(KEYS.config, {}), ...urlConfig });
+
+function configToParams(c) {
+  const p = new URLSearchParams();
+  p.set('tempos', c.tempos.join(','));
+  p.set('reps', c.reps); p.set('sync', c.syncBeats); p.set('cont', c.continuation ? 1 : 0); p.set('contBeats', c.contBeats);
+  p.set('random', c.randomize ? 1 : 0); p.set('practice', c.practice ? 1 : 0); p.set('practiceBpm', c.practiceBpm);
+  p.set('practiceBeats', c.practiceBeats); p.set('exclude', c.excludeInitial);
+  if (c.promsUrl !== DEFAULTS.promsUrl) p.set('proms', c.promsUrl);
+  if (c.resultsUrl && c.resultsUrl !== DEFAULTS.resultsUrl) p.set('send', c.resultsUrl);
+  return p.toString();
+}
+
+/* =========================================================================
+   Small helpers
+   ========================================================================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+const isTouch = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const mean = a => a.length ? a.reduce((s, x) => s + x, 0) / a.length : null;
+const sd = a => { if (a.length < 2) return null; const m = mean(a); return Math.sqrt(a.reduce((s, x) => s + (x - m) ** 2, 0) / (a.length - 1)); };
+const median = a => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), k = s.length >> 1; return s.length % 2 ? s[k] : (s[k - 1] + s[k]) / 2; };
+const quantile = (a, q) => { const s = [...a].sort((x, y) => x - y), pos = (s.length - 1) * q, lo = Math.floor(pos); return s[lo] + (s[Math.min(lo + 1, s.length - 1)] - s[lo]) * (pos - lo); };
+const iqr = a => a.length >= 4 ? quantile(a, 0.75) - quantile(a, 0.25) : null;
+function slope(xs, ys) {
+  const n = xs.length; if (n < 3) return null;
+  const mx = mean(xs), my = mean(ys); let num = 0, den = 0;
+  for (let i = 0; i < n; i++) { num += (xs[i] - mx) * (ys[i] - my); den += (xs[i] - mx) ** 2; }
+  return den ? num / den : null;
+}
+const fin = v => v != null && Number.isFinite(v);
+const fmt = (v, d = 1) => fin(v) ? v.toFixed(d) : '—';
+const fmtSigned = (v, d = 1) => fin(v) ? (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d) : '—';
+const r3 = v => fin(v) ? Math.round(v * 1000) / 1000 : '';
+const bpmLabel = b => (Math.round(b * 100) / 100).toString();
+const trialKey = (bpm, rep, reps) => 'bpm' + bpmLabel(bpm).replace('.', 'p') + (reps > 1 ? '_r' + rep : '');
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function makeId() {
+  const d = new Date(), p = n => String(n).padStart(2, '0');
+  const rnd = Math.random().toString(36).slice(2, 6);
+  return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}-${rnd}`;
+}
+function slug(s) {
+  return String(s || 'participant').normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase().slice(0, 40) || 'participant';
+}
+
+/* =========================================================================
+   Audio engine — Web Audio scheduling + audio-clock → performance.now() mapping
+   ========================================================================= */
+function makeWoodblock(ctx) {
+  // Synthesised woodblock: three decaying partials + a 3 ms noise transient.
+  // Sound onset is at sample 0, so the scheduled time equals the acoustic onset.
+  const sr = ctx.sampleRate, n = Math.round(sr * 0.09);
+  const buf = ctx.createBuffer(1, n, sr), d = buf.getChannelData(0);
+  const partials = [[1050, 1.0, 0.016], [1720, 0.55, 0.011], [2780, 0.28, 0.007]]; // [Hz, amplitude, decay τ (s)]
+  let seed = 12345; const rand = () => ((seed = (seed * 1103515245 + 12345) & 0x7fffffff) / 0x7fffffff) * 2 - 1;
+  let peak = 0;
+  for (let i = 0; i < n; i++) {
+    const t = i / sr; let s = 0;
+    for (const [f, a, tau] of partials) s += a * Math.sin(2 * Math.PI * f * t) * Math.exp(-t / tau);
+    if (t < 0.003) s += 0.35 * rand() * (1 - t / 0.003);
+    d[i] = s; peak = Math.max(peak, Math.abs(s));
+  }
+  for (let i = 0; i < n; i++) d[i] = d[i] / peak * 0.85;
+  return buf;
+}
+
+const AudioEngine = {
+  ctx: null, master: null, click: null, sources: new Set(), samples: [],
+  /** Create/resume the AudioContext. Call from a user gesture (click/key). */
+  ensure() {
+    if (!this.ctx) {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return Promise.reject(new Error('This browser does not support the Web Audio API.'));
+      try { this.ctx = new AC({ latencyHint: 'interactive' }); } catch (e) { this.ctx = new AC(); }
+      this.master = this.ctx.createGain(); this.master.gain.value = 0.9; this.master.connect(this.ctx.destination);
+      this.click = makeWoodblock(this.ctx);
+      try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) { /* iOS: ignore mute switch */ }
+    }
+    if (this.ctx.state === 'running') return Promise.resolve();
+    const resume = this.ctx.resume();
+    const timeout = new Promise(res => setTimeout(res, 1500));
+    return Promise.race([resume, timeout]).then(() => {
+      if (this.ctx.state !== 'running') throw new Error('Sound is blocked by the browser. Click the button again to enable it.');
+    });
+  },
+  schedule(times) {
+    for (const t of times) {
+      const s = this.ctx.createBufferSource(); s.buffer = this.click; s.connect(this.master);
+      s.onended = () => this.sources.delete(s);
+      s.start(t); this.sources.add(s);
+    }
+  },
+  stopAll() { for (const s of this.sources) { try { s.stop(); } catch (e) { /* already stopped */ } } this.sources.clear(); },
+  /** Record one estimate of (performance.now() − audioContextTime·1000) at the speaker output. */
+  sample() {
+    const ctx = this.ctx; if (!ctx) return;
+    const now = performance.now();
+    const lat = ((ctx.baseLatency || 0) + (ctx.outputLatency || 0)) * 1000;
+    const fallback = now - ctx.currentTime * 1000 + lat;
+    let ots = null;
+    if (typeof ctx.getOutputTimestamp === 'function') {
+      try {
+        const ts = ctx.getOutputTimestamp();
+        if (ts && ts.performanceTime > 0 && ts.contextTime > 0) ots = ts.performanceTime - ts.contextTime * 1000;
+      } catch (e) { /* unsupported */ }
+    }
+    this.samples.push({ now, ots, fallback });
+  },
+  /** Whole-round estimate (used for UI timing and as fallback). */
+  offsetInfo() {
+    const ots = this.samples.map(s => s.ots).filter(fin), fb = this.samples.map(s => s.fallback);
+    const mFb = median(fb);
+    if (ots.length >= 3) {
+      const m = median(ots);
+      // sanity check: both estimates must agree roughly, otherwise trust the simpler one
+      if (mFb == null || Math.abs(m - mFb) < 250) return { offset: m, method: 'getOutputTimestamp', n: ots.length, jitter: iqr(ots) };
+    }
+    return { offset: mFb ?? 0, method: 'currentTime+latency', n: fb.length, jitter: iqr(fb) };
+  },
+  /**
+   * Map audio-context times (s) to performance.now() (ms) using the clock samples taken
+   * within ±300 ms of each click. This follows audio-buffer glitches, which shift the
+   * relation between the audio clock and the system clock by one buffer (~3–20 ms).
+   */
+  mapTimes(ctxTimes) {
+    const g = this.offsetInfo(), useOts = g.method === 'getOutputTimestamp';
+    const offsets = ctxTimes.map(s => {
+      const approx = s * 1000 + g.offset;
+      const near = this.samples.filter(x => Math.abs(x.now - approx) <= 300).map(x => useOts ? x.ots : x.fallback).filter(fin);
+      return near.length >= 3 ? median(near) : g.offset;
+    });
+    return { ...g, offsets, perf: ctxTimes.map((s, i) => s * 1000 + offsets[i]),
+             shift: offsets.length ? Math.max(...offsets) - Math.min(...offsets) : 0 };
+  },
+  env() {
+    const c = this.ctx; if (!c) return {};
+    return { sampleRate: c.sampleRate, baseLatencyMs: fin(c.baseLatency) ? c.baseLatency * 1000 : null,
+             outputLatencyMs: fin(c.outputLatency) ? c.outputLatency * 1000 : null };
+  },
+};
+
+/* =========================================================================
+   Analysis
+   ========================================================================= */
+/**
+ * Analyse one trial. All times in ms on the performance.now() timebase.
+ * Sync phase: taps from (beat 1 − IOI/2) to (last beat + IOI/2), each matched to the nearest beat.
+ * Continuation phase: from there to (last beat + contBeats·IOI + IOI/2).
+ * Metrics exclude the first `excludeInitial` sync beats. ITIs outside 0.5–1.5 × IOI
+ * (missed or double taps) are excluded from ITI statistics but kept in the raw data.
+ */
+function analyzeTrial(t) {
+  const ioi = t.ioiMs, beats = t.beatPerf, n = beats.length;
+  const lastSync = beats[n - 1];
+  const syncStart = beats[0] - ioi / 2, syncEnd = lastSync + ioi / 2;
+  const contEnd = lastSync + t.contBeats * ioi + ioi / 2;
+  const excl = Math.max(0, Math.min(t.excludeInitial, n - 2));
+  const anaStart = beats[excl] - ioi / 2;
+
+  const taps = t.taps.map((p, i) => ({ ...p, order: i })).sort((a, b) => a.t - b.t);
+  taps.forEach((p, i) => {
+    p.n = i + 1;
+    p.phase = p.t < syncStart ? 'pre' : p.t < syncEnd ? 'sync' : (t.contBeats > 0 && p.t < contEnd) ? 'continuation' : 'post';
+  });
+
+  const best = new Array(n).fill(null);
+  for (const p of taps) {
+    if (p.phase !== 'sync') continue;
+    let j = Math.min(n - 1, Math.max(0, Math.round((p.t - beats[0]) / ioi)));
+    for (const k of [j - 1, j + 1]) if (k >= 0 && k < n && Math.abs(p.t - beats[k]) < Math.abs(p.t - beats[j])) j = k;
+    p.beat = j + 1; p.async = p.t - beats[j];
+    if (!best[j] || Math.abs(p.async) < Math.abs(best[j].async)) best[j] = p;
+  }
+  for (const p of taps) {
+    if (p.phase === 'sync') p.best = best[p.beat - 1] === p;
+    p.inAnalysis = (p.phase === 'sync' && p.t >= anaStart) || p.phase === 'continuation';
+  }
+  const prev = {};
+  for (const p of taps) {
+    if (p.phase !== 'sync' && p.phase !== 'continuation') continue;
+    const q = prev[p.phase];
+    if (q) {
+      p.iti = p.t - q.t;
+      p.itiValid = p.iti >= 0.5 * ioi && p.iti <= 1.5 * ioi;
+      p.itiInAnalysis = p.inAnalysis && q.inAnalysis;
+    }
+    prev[p.phase] = p;
+  }
+
+  const asy = best.slice(excl).filter(Boolean).map(p => p.async);
+  const syncItiAll = taps.filter(p => p.phase === 'sync' && p.itiInAnalysis);
+  const syncIti = syncItiAll.filter(p => p.itiValid).map(p => p.iti);
+  const contTaps = taps.filter(p => p.phase === 'continuation');
+  const contItiAll = contTaps.filter(p => p.iti != null);
+  const contItiP = contItiAll.filter(p => p.itiValid);
+  const contIti = contItiP.map(p => p.iti);
+
+  const mSyncIti = mean(syncIti), sSyncIti = sd(syncIti);
+  const mContIti = mean(contIti), sContIti = sd(contIti);
+  const metrics = {
+    preTaps: taps.filter(p => p.phase === 'pre').length,
+    postTaps: taps.filter(p => p.phase === 'post').length,
+    syncTaps: taps.filter(p => p.phase === 'sync').length,
+    syncBeatsAnalysed: n - excl,
+    syncMatched: asy.length,
+    syncMissed: (n - excl) - asy.length,
+    syncExtra: taps.filter(p => p.phase === 'sync' && p.inAnalysis && !p.best).length,
+    syncMeanAsync: mean(asy),
+    syncSdAsync: sd(asy),
+    syncMeanIti: mSyncIti,
+    syncSdIti: sSyncIti,
+    syncCvPct: fin(sSyncIti) && mSyncIti ? sSyncIti / mSyncIti * 100 : null,
+    syncTapBpm: mSyncIti ? 60000 / mSyncIti : null,
+    syncItiExcluded: syncItiAll.length - syncIti.length,
+    contTaps: contTaps.length,
+    contMeanIti: mContIti,
+    contSdIti: sContIti,
+    contCvPct: fin(sContIti) && mContIti ? sContIti / mContIti * 100 : null,
+    contTapBpm: mContIti ? 60000 / mContIti : null,
+    contTempoErrPct: mContIti ? (mContIti - ioi) / ioi * 100 : null,
+    contDrift: slope(contItiP.map(p => contTaps.indexOf(p)), contIti),
+    contItiExcluded: contItiAll.length - contIti.length,
+  };
+  return { taps, metrics, excl, windows: { syncStart, syncEnd, contEnd, anaStart } };
+}
+
+/* =========================================================================
+   Session state
+   ========================================================================= */
+let session = null;
+let downloaded = false;
+let backupOk = true;
+let currentStep = 'welcome';
+
+function newSession() {
+  return {
+    sessionId: makeId(), appVersion: APP_VERSION,
+    startedAt: new Date().toISOString(), completedAt: null, complete: false,
+    participant: { name: '', id: '', age: '', musicalTrainingYears: '' },
+    proms: { accent: '', tempo: '', completed: false, openedAt: null, confirmedAt: null },
+    config: null, plan: [], planPos: 0, trials: [], env: {},
+  };
+}
+function buildPlan(c) {
+  const tests = [];
+  for (let r = 1; r <= c.reps; r++) for (const bpm of c.tempos) tests.push({ kind: 'test', bpm, rep: r });
+  if (c.randomize) shuffle(tests);
+  const plan = [];
+  if (c.practice) plan.push({ kind: 'practice', bpm: c.practiceBpm, rep: 1, syncBeats: c.practiceBeats, contBeats: c.continuation ? c.practiceBeats : 0 });
+  for (const t of tests) plan.push({ ...t, syncBeats: c.syncBeats, contBeats: c.continuation ? c.contBeats : 0 });
+  plan.forEach((p, i) => { p.planIndex = i; p.key = p.kind === 'practice' ? 'practice' : trialKey(p.bpm, p.rep, c.reps); });
+  return plan;
+}
+function persistSession() {
+  if (!session) return;
+  const all = store.get(KEYS.sessions, []);
+  const i = all.findIndex(s => s.sessionId === session.sessionId);
+  if (i >= 0) all[i] = session; else all.push(session);
+  backupOk = store.set(KEYS.sessions, all);
+}
+const testItems = s => s.plan.filter(p => p.kind === 'test');
+/** Last attempt of each test round, in presentation order. */
+function finalTrials(s) {
+  const m = new Map();
+  for (const t of s.trials) if (t.kind === 'test') m.set(t.planIndex, t);
+  return [...m.values()].sort((a, b) => a.planIndex - b.planIndex);
+}
+
+/* =========================================================================
+   Navigation & stepper
+   ========================================================================= */
+const STAGES = ['Welcome', 'PROMS tests', 'Tapping task', 'Finish'];
+const STEP_STAGE = { welcome: 0, proms: 1, tapIntro: 2, trial: 2, background: 3, results: 3 };
+function renderStepper(active) {
+  $('#stepper').innerHTML = STAGES.map((label, i) => {
+    const st = i < active ? 'done' : i === active ? 'current' : 'todo';
+    const badge = st === 'current' ? 'bg-accent text-white' : st === 'done' ? 'bg-accent-soft text-accent' : 'border border-line text-muted';
+    const text = st === 'current' ? 'font-medium text-ink' : 'hidden text-muted sm:inline';
+    return `<li class="flex items-center gap-2" ${st === 'current' ? 'aria-current="step"' : ''}>
+      ${i ? '<span class="h-px w-4 bg-line sm:w-7" aria-hidden="true"></span>' : ''}
+      <span class="grid h-6 w-6 place-items-center rounded-full text-xs font-semibold ${badge}">${st === 'done' ? '✓' : i + 1}</span>
+      <span class="${text}">${label}</span></li>`;
+  }).join('');
+}
+function go(step) {
+  currentStep = step;
+  $$('.step').forEach(s => s.classList.toggle('hidden', s.dataset.step !== step));
+  renderStepper(STEP_STAGE[step]);
+  window.scrollTo(0, 0);
+  if (step !== 'trial') { const h = $(`#step-${step} [tabindex="-1"]`); if (h) h.focus({ preventScroll: true }); }
+}
+
+/* =========================================================================
+   Step 1 — Welcome
+   ========================================================================= */
+$('#welcome-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('#p-name').value.trim().replace(/\s+/g, ' ');
+  $('#p-name-err').classList.toggle('hidden', !!name);
+  $('#p-name').setAttribute('aria-invalid', name ? 'false' : 'true');
+  if (!name) { $('#p-name').focus(); return; }
+  if (!session) session = newSession();
+  session.participant.name = name;
+  session.participant.id = $('#p-id').value.trim();
+  session.participant.age = $('#p-age').value.trim();
+  persistSession();
+  go('proms');
+});
+
+/* =========================================================================
+   Step 2 — PROMS
+   ========================================================================= */
+$('#proms-link').addEventListener('click', () => { if (session && !session.proms.openedAt) session.proms.openedAt = new Date().toISOString(); });
+$('#proms-done').addEventListener('change', e => { $('#proms-next').disabled = !e.target.checked; });
+$('#proms-back').addEventListener('click', () => go('welcome'));
+$('#proms-next').addEventListener('click', () => {
+  session.proms.accent = $('#proms-accent').value.trim();
+  session.proms.tempo = $('#proms-tempo').value.trim();
+  session.proms.completed = true;
+  session.proms.confirmedAt = new Date().toISOString();
+  if (!session.trials.length) { session.config = { ...config, tempos: [...config.tempos] }; session.plan = buildPlan(session.config); session.planPos = 0; }
+  persistSession();
+  renderTapIntro();
+  go('tapIntro');
+});
+
+/* =========================================================================
+   Step 3 — Tapping instructions
+   ========================================================================= */
+function renderTapIntro() {
+  const c = session.config, nTests = testItems(session).length;
+  const longest = Math.max(...session.plan.map(p => c.leadInMs / 1000 + (p.syncBeats + p.contBeats) * 60 / p.bpm));
+  const secs = Math.max(10, Math.round(longest / 5) * 5);
+  const rounds = nTests === 1 ? `1 round of about ${secs} seconds` : `${nTests} rounds of about ${secs} seconds each`;
+  $('#tap-plan-text').innerHTML = c.practice
+    ? `There's a short <strong>practice round</strong> first, then ${rounds}.`
+    : `There ${nTests === 1 ? 'is' : 'are'} ${rounds}.`;
+  $('#tap-start').textContent = c.practice ? 'Start practice round' : 'Start first round';
+  $$('.cont-only').forEach(el => el.classList.toggle('hidden', !c.continuation));
+}
+$('#sound-test').addEventListener('click', async () => {
+  try {
+    await AudioEngine.ensure();
+    const t = AudioEngine.ctx.currentTime + 0.12;
+    AudioEngine.schedule([0, 1, 2, 3].map(i => t + i * 0.6));
+  } catch (err) { alertInline(err.message); }
+});
+function alertInline(msg) {
+  const n = $('#sound-test').parentElement.querySelector('span');
+  n.textContent = msg; n.classList.add('text-red-700');
+}
+$('#tap-back').addEventListener('click', () => go('proms'));
+$('#tap-start').addEventListener('click', () => { go('trial'); startTrial(); });
+
+/* =========================================================================
+   Step 3b — Trial runner
+   ========================================================================= */
+const Run = { active: null, timers: [], sampler: null };
+const pad = $('#tap-pad'), ring = $('#tap-ring');
+
+function setStatus(title, sub = '') { $('#trial-status').textContent = title; $('#trial-sub').textContent = sub; }
+function setActions(list) {
+  const box = $('#trial-actions'); box.innerHTML = '';
+  for (const a of list) {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'btn ' + (a.primary ? 'btn-primary' : 'btn-secondary'); b.textContent = a.label;
+    if (a.primary) b.dataset.primary = '1';
+    b.addEventListener('click', a.onClick); box.appendChild(b);
+  }
+  $('#trial-enter-hint').classList.toggle('hidden', !list.some(a => a.primary));
+}
+function roundLabel(item) {
+  if (item.kind === 'practice') return 'Practice round';
+  const tests = testItems(session);
+  return `Round ${tests.indexOf(item) + 1} of ${tests.length}`;
+}
+function later(perfTime, fn) { Run.timers.push(setTimeout(fn, Math.max(0, perfTime - performance.now()))); }
+
+async function startTrial() {
+  const item = session.plan[session.planPos];
+  $('#trial-label').textContent = roundLabel(item);
+  setStatus('Get ready', 'Listen for the clicks');
+  setActions([]);
+  pad.classList.add('opacity-40');
+  if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+  try { await AudioEngine.ensure(); }
+  catch (err) {
+    setStatus('Sound could not start', err.message);
+    setActions([{ label: 'Try again', primary: true, onClick: startTrial }]);
+    return;
+  }
+  const ctx = AudioEngine.ctx, ioiS = 60 / item.bpm;
+  AudioEngine.samples = [];
+  AudioEngine.sample();
+  const t0 = ctx.currentTime + session.config.leadInMs / 1000;
+  const beatCtx = Array.from({ length: item.syncBeats }, (_, i) => t0 + i * ioiS);
+  AudioEngine.schedule(beatCtx);
+
+  const trial = {
+    planIndex: item.planIndex, key: item.key, kind: item.kind, bpm: item.bpm, rep: item.rep,
+    attempt: session.trials.filter(t => t.planIndex === item.planIndex).length + 1,
+    ioiMs: 60000 / item.bpm, syncBeats: item.syncBeats, contBeats: item.contBeats,
+    excludeInitial: Math.min(session.config.excludeInitial, item.syncBeats - 2),
+    startedAt: new Date().toISOString(), beatCtx, taps: [], tabHidden: 0,
+  };
+  Run.active = trial;
+  pad.classList.remove('opacity-40');
+  Run.sampler = setInterval(() => AudioEngine.sample(), 100);
+
+  // UI timing uses a preliminary clock estimate; logged data use the refined estimate at the end.
+  const off = AudioEngine.offsetInfo().offset, ioi = trial.ioiMs;
+  const firstPerf = beatCtx[0] * 1000 + off, lastSyncPerf = beatCtx[beatCtx.length - 1] * 1000 + off;
+  const endPerf = lastSyncPerf + trial.contBeats * ioi + ioi / 2;
+  later(firstPerf, () => setStatus('Tap along with the beat', ''));
+  if (trial.contBeats > 0) later(lastSyncPerf + ioi / 2, () => setStatus('Keep tapping at the same speed', 'The clicks have stopped'));
+  later(endPerf + 150, finishTrial);
+}
+
+function stopRunning() {
+  clearInterval(Run.sampler); Run.sampler = null;
+  Run.timers.forEach(clearTimeout); Run.timers = [];
+}
+function finishTrial() {
+  const trial = Run.active; if (!trial) return;
+  Run.active = null; stopRunning();
+  AudioEngine.sample();
+  const map = AudioEngine.mapTimes(trial.beatCtx);
+  trial.clock = { method: map.method, offsetMs: map.offset, jitterMs: map.jitter, shiftMs: map.shift, samples: map.n };
+  trial.beatOffsets = map.offsets;
+  trial.beatPerf = map.perf;
+  trial.endedAt = new Date().toISOString();
+  session.trials.push(trial);
+  session.env = { ...AudioEngine.env(), userAgent: navigator.userAgent, touchDevice: isTouch };
+  persistSession();
+  pad.classList.add('opacity-40');
+  showTrialDone(trial);
+}
+function abortTrial() {
+  if (!Run.active) return;
+  Run.active = null; stopRunning(); AudioEngine.stopAll();
+  pad.classList.add('opacity-40');
+  setStatus('Round stopped', 'Nothing from this round was saved.');
+  setActions([{ label: 'Restart this round', primary: true, onClick: startTrial }]);
+}
+function showTrialDone(trial) {
+  const m = analyzeTrial(trial).metrics;
+  const expected = trial.syncBeats + trial.contBeats, counted = m.syncTaps + m.contTaps;
+  const fewTaps = counted < 0.5 * expected;
+  const isLast = session.planPos >= session.plan.length - 1;
+  const next = () => { session.planPos++; startTrial(); };
+  const nextLabel = () => roundLabel(session.plan[session.planPos + 1]).replace('Round', 'round').replace(/ of \d+$/, '');
+  const fewMsg = `Only ${counted} tap${counted === 1 ? ' was' : 's were'} registered. Press the Space bar${isTouch ? ' or tap the circle' : ''} in time with each click.`;
+
+  if (trial.kind === 'practice') {
+    setStatus('Practice complete', fewTaps ? fewMsg : 'The real rounds work the same way.');
+    setActions([
+      { label: 'Repeat practice', primary: fewTaps, onClick: startTrial },
+      ...(isLast ? [{ label: 'Continue', primary: !fewTaps, onClick: () => go('background') }]
+                 : [{ label: `Start ${nextLabel()}`, primary: !fewTaps, onClick: next }]),
+    ]);
+    return;
+  }
+  const label = roundLabel(session.plan[session.planPos]);
+  if (fewTaps) {
+    setStatus(`${label}: very few taps`, fewMsg);
+    setActions([
+      { label: 'Repeat this round', primary: true, onClick: startTrial },
+      { label: 'Continue anyway', primary: false, onClick: isLast ? () => go('background') : next },
+    ]);
+  } else if (isLast) {
+    setStatus('Done', 'That was the last round.');
+    setActions([{ label: 'Continue', primary: true, onClick: () => go('background') }]);
+  } else {
+    setStatus('Done', 'Take a short break if you like.');
+    setActions([{ label: `Start ${nextLabel()}`, primary: true, onClick: next }]);
+  }
+}
+
+function registerTap(ts, input) {
+  if (!Run.active) return;
+  const now = performance.now();
+  const t = (typeof ts === 'number' && ts > 0 && Math.abs(now - ts) < 1000) ? ts : now; // event time, same timebase as performance.now()
+  Run.active.taps.push({ t, h: now, input });
+  pulse();
+}
+function pulse() {
+  if (reduceMotion) { pad.animate([{ backgroundColor: '#e3eeec' }, { backgroundColor: '#ffffff' }], { duration: 160 }); return; }
+  pad.animate([{ transform: 'scale(1)', backgroundColor: '#e3eeec' }, { transform: 'scale(0.965)', offset: 0.2 }, { transform: 'scale(1)', backgroundColor: '#ffffff' }],
+    { duration: 220, easing: 'ease-out' });
+  ring.animate([{ opacity: 0.45, transform: 'scale(1)' }, { opacity: 0, transform: 'scale(1.16)' }],
+    { duration: 420, easing: 'cubic-bezier(.2,.7,.3,1)' });
+}
+
+const isSpace = e => e.code === 'Space' || e.key === ' ' || e.key === 'Spacebar';
+window.addEventListener('keydown', e => {
+  if (currentStep !== 'trial') return;
+  if (isSpace(e)) { e.preventDefault(); if (!e.repeat) registerTap(e.timeStamp, 'keyboard'); return; }
+  if (e.key === 'Escape' && Run.active) { e.preventDefault(); abortTrial(); return; }
+  if (e.key === 'Enter' && !Run.active && !e.repeat) {
+    const b = $('#trial-actions [data-primary]');
+    if (b) { e.preventDefault(); b.click(); }
+  }
+}, true);
+window.addEventListener('keyup', e => { if (currentStep === 'trial' && isSpace(e)) e.preventDefault(); }, true);
+pad.addEventListener('pointerdown', e => {
+  if (e.pointerType === 'mouse' && e.button !== 0) return;
+  e.preventDefault();
+  registerTap(e.timeStamp, e.pointerType || 'pointer');
+});
+pad.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('visibilitychange', () => { if (document.hidden && Run.active) Run.active.tabHidden++; });
+
+/* =========================================================================
+   Step 4 — Background question & results
+   ========================================================================= */
+$('#bg-form').addEventListener('submit', e => {
+  e.preventDefault();
+  session.participant.musicalTrainingYears = $('#p-training').value.trim();
+  session.complete = true;
+  session.completedAt = new Date().toISOString();
+  persistSession();
+  renderResults();
+  go('results');
+});
+
+function renderResults() {
+  const s = session, cont = s.config.continuation;
+  const rows = finalTrials(s).map(t => ({ t, m: analyzeTrial(t).metrics })).sort((a, b) => a.t.bpm - b.t.bpm || a.t.rep - b.t.rep);
+  const th = 'whitespace-nowrap px-3 py-2 font-medium', grp = 'px-3 pt-3 pb-1 text-[0.68rem] font-semibold tracking-[0.12em] text-ink/70';
+  $('#res-head').innerHTML = `<tr>
+      <th class="${th} align-bottom" rowspan="2">Tempo</th>
+      <th class="${grp} border-l border-line" colspan="3">With clicks</th>
+      ${cont ? `<th class="${grp} border-l border-line" colspan="2">After clicks stopped</th>` : ''}</tr>
+    <tr><th class="${th} border-l border-line">Asynchrony</th><th class="${th}">SD</th><th class="${th}">Variability</th>
+      ${cont ? `<th class="${th} border-l border-line">Tempo</th><th class="${th}">Variability</th>` : ''}</tr>`;
+  const td = 'whitespace-nowrap px-3 py-3';
+  $('#res-body').innerHTML = rows.map(({ t, m }) => `<tr>
+    <td class="${td} font-medium">${bpmLabel(t.bpm)} BPM${s.config.reps > 1 ? ` <span class="text-muted">(${t.rep})</span>` : ''}</td>
+    <td class="${td} border-l border-line">${fmtSigned(m.syncMeanAsync)} ms</td>
+    <td class="${td}">${fmt(m.syncSdAsync)} ms</td>
+    <td class="${td}">${fmt(m.syncCvPct)} %</td>
+    ${cont ? `<td class="${td} border-l border-line">${fmt(m.contTapBpm)} BPM <span class="block text-xs text-muted">${fmtSigned(fin(m.contTapBpm) ? (m.contTapBpm - t.bpm) / t.bpm * 100 : null)} %</span></td>
+              <td class="${td}">${fmt(m.contCvPct)} %</td>` : ''}</tr>`).join('')
+    || `<tr><td class="${td} text-muted" colspan="6">No completed rounds.</td></tr>`;
+  $$('#step-results .cont-only').forEach(el => el.classList.toggle('hidden', !cont));
+
+  const p = s.participant, meta = [
+    ['Name', p.name], ['Participant ID', p.id || '—'], ['Age', p.age || '—'], ['Musical training', p.musicalTrainingYears !== '' ? `${p.musicalTrainingYears} years` : '—'],
+    ['PROMS Accent', s.proms.accent || '—'], ['PROMS Tempo', s.proms.tempo || '—'], ['Session', s.sessionId],
+  ];
+  $('#res-meta').innerHTML = meta.map(([k, v]) => `<dt class="text-muted">${k}</dt><dd class="font-medium">${esc(v)}</dd>`).join('');
+  setSendUI(s.sentAt ? 'sent' : 'idle', s.sentAt ? 'The results were emailed to the research team.' : '');
+  $('#backup-note').textContent = backupOk
+    ? 'A backup copy is also saved in this browser (Researcher settings on the first screen).'
+    : 'Warning: no backup copy could be saved in this browser — download the data now.';
+  $('#backup-note').classList.toggle('text-red-700', !backupOk);
+}
+
+/* =========================================================================
+   CSV export
+   ========================================================================= */
+function summaryRow(s) {
+  const c = s.config || config, p = s.participant;
+  const finals = finalTrials(s);
+  const inputs = [...new Set(s.trials.flatMap(t => t.taps.map(tp => tp.input)))].join('+');
+  const shifts = s.trials.map(t => t.clock && t.clock.shiftMs).filter(fin);
+  const lastClock = s.trials.length ? s.trials[s.trials.length - 1].clock : null;
+  const r = {
+    session_id: s.sessionId, participant_name: p.name, participant_id: p.id, age: p.age,
+    musical_training_years: p.musicalTrainingYears,
+    proms_accent_score: s.proms.accent, proms_tempo_score: s.proms.tempo, proms_completed: s.proms.completed ? 1 : 0,
+    session_started: s.startedAt, session_completed: s.completedAt || '', session_complete: s.complete ? 1 : 0,
+    tempos_bpm: c.tempos.join(' '), repetitions: c.reps, sync_beats: c.syncBeats,
+    continuation: c.continuation ? 1 : 0, continuation_beats: c.continuation ? c.contBeats : 0,
+    randomized: c.randomize ? 1 : 0, excluded_initial_beats: c.excludeInitial,
+    round_order: s.plan.filter(x => x.kind === 'test').map(x => x.key).join(' > '),
+    practice_attempts: s.trials.filter(t => t.kind === 'practice').length,
+  };
+  const per = [];
+  finals.forEach((t, i) => {
+    const m = analyzeTrial(t).metrics, k = t.key + '_';
+    per.push(m);
+    Object.assign(r, {
+      [k + 'order']: s.plan.filter(x => x.kind === 'test').findIndex(x => x.planIndex === t.planIndex) + 1,
+      [k + 'attempts']: s.trials.filter(x => x.planIndex === t.planIndex).length,
+      [k + 'sync_taps']: m.syncTaps, [k + 'sync_beats_analysed']: m.syncBeatsAnalysed,
+      [k + 'sync_matched']: m.syncMatched, [k + 'sync_missed']: m.syncMissed, [k + 'sync_extra_taps']: m.syncExtra,
+      [k + 'sync_mean_async_ms']: r3(m.syncMeanAsync), [k + 'sync_sd_async_ms']: r3(m.syncSdAsync),
+      [k + 'sync_mean_iti_ms']: r3(m.syncMeanIti), [k + 'sync_sd_iti_ms']: r3(m.syncSdIti),
+      [k + 'sync_cv_iti_pct']: r3(m.syncCvPct), [k + 'sync_tap_bpm']: r3(m.syncTapBpm),
+      [k + 'sync_itis_excluded']: m.syncItiExcluded,
+    });
+    if (t.contBeats > 0) Object.assign(r, {
+      [k + 'cont_taps']: m.contTaps, [k + 'cont_mean_iti_ms']: r3(m.contMeanIti), [k + 'cont_sd_iti_ms']: r3(m.contSdIti),
+      [k + 'cont_cv_iti_pct']: r3(m.contCvPct), [k + 'cont_tap_bpm']: r3(m.contTapBpm),
+      [k + 'cont_tempo_error_pct']: r3(m.contTempoErrPct), [k + 'cont_drift_ms_per_tap']: r3(m.contDrift),
+      [k + 'cont_itis_excluded']: m.contItiExcluded,
+    });
+    r[k + 'tab_hidden'] = t.tabHidden;
+  });
+  const avg = f => r3(mean(per.map(f).filter(fin)));
+  Object.assign(r, {
+    all_sync_mean_async_ms: avg(m => m.syncMeanAsync),
+    all_sync_sd_async_ms: avg(m => m.syncSdAsync),
+    all_sync_cv_iti_pct: avg(m => m.syncCvPct),
+  });
+  if (c.continuation) Object.assign(r, {
+    all_cont_cv_iti_pct: avg(m => m.contCvPct),
+    all_cont_abs_tempo_error_pct: avg(m => fin(m.contTempoErrPct) ? Math.abs(m.contTempoErrPct) : null),
+  });
+  Object.assign(r, {
+    input_methods: inputs,
+    timing_method: lastClock ? lastClock.method : '',
+    max_clock_shift_ms: shifts.length ? r3(Math.max(...shifts)) : '',
+    audio_output_latency_ms: r3(s.env.outputLatencyMs), audio_base_latency_ms: r3(s.env.baseLatencyMs),
+    audio_sample_rate: s.env.sampleRate || '', user_agent: s.env.userAgent || navigator.userAgent, app_version: s.appVersion,
+  });
+  return r;
+}
+
+const RAW_COLS = ['session_id', 'participant_name', 'participant_id', 'age', 'musical_training_years', 'proms_accent_score', 'proms_tempo_score',
+  'trial_seq', 'trial_key', 'is_practice', 'attempt', 'is_final_attempt', 'target_bpm', 'ioi_ms',
+  'phase', 'event', 'beat_number', 'tap_number', 'time_ms', 'perf_time_ms', 'audio_time_s', 'input',
+  'nearest_beat', 'asynchrony_ms', 'closest_tap_to_beat', 'in_analysis', 'iti_ms', 'iti_valid', 'handler_lag_ms', 'clock_offset_ms', 'timing_method'];
+
+function rawRows(s) {
+  const p = s.participant, rows = [];
+  const base = { session_id: s.sessionId, participant_name: p.name, participant_id: p.id, age: p.age,
+    musical_training_years: p.musicalTrainingYears, proms_accent_score: s.proms.accent, proms_tempo_score: s.proms.tempo };
+  const lastAttempt = new Map(); s.trials.forEach(t => lastAttempt.set(t.planIndex, t));
+  s.trials.forEach((t, ti) => {
+    const a = analyzeTrial(t), t0 = t.beatPerf[0], ioi = t.ioiMs;
+    const tb = { trial_seq: ti + 1, trial_key: t.key, is_practice: t.kind === 'practice' ? 1 : 0, attempt: t.attempt,
+      is_final_attempt: lastAttempt.get(t.planIndex) === t ? 1 : 0, target_bpm: t.bpm, ioi_ms: r3(ioi), timing_method: t.clock ? t.clock.method : '' };
+    const ev = [];
+    t.beatPerf.forEach((bp, i) => ev.push({ sort: bp, pri: 0, phase: 'sync', event: 'beat', beat_number: i + 1, perf_time_ms: bp,
+      audio_time_s: Math.round(t.beatCtx[i] * 1e6) / 1e6, in_analysis: i >= a.excl ? 1 : 0,
+      clock_offset_ms: t.beatOffsets ? r3(t.beatOffsets[i]) : '' }));
+    const last = t.beatPerf[t.beatPerf.length - 1];
+    for (let k = 1; k <= t.contBeats; k++) ev.push({ sort: last + k * ioi, pri: 0, phase: 'continuation', event: 'silent_beat',
+      beat_number: t.syncBeats + k, perf_time_ms: last + k * ioi, in_analysis: 1 });
+    for (const tp of a.taps) ev.push({ sort: tp.t, pri: 1, phase: tp.phase, event: 'tap', tap_number: tp.n, perf_time_ms: tp.t, input: tp.input,
+      nearest_beat: tp.beat ?? '', asynchrony_ms: tp.phase === 'sync' ? r3(tp.async) : '',
+      closest_tap_to_beat: tp.phase === 'sync' ? (tp.best ? 1 : 0) : '', in_analysis: tp.inAnalysis ? 1 : 0,
+      iti_ms: r3(tp.iti), iti_valid: tp.iti != null ? (tp.itiValid ? 1 : 0) : '', handler_lag_ms: r3(tp.h - tp.t) });
+    ev.sort((x, y) => x.sort - y.sort || x.pri - y.pri);
+    for (const e of ev) {
+      const { sort, pri, ...rest } = e;
+      rows.push({ ...base, ...tb, ...rest, time_ms: r3(e.perf_time_ms - t0), perf_time_ms: r3(e.perf_time_ms) });
+    }
+  });
+  return rows;
+}
+
+function toCSV(rows, cols) {
+  const cell = v => {
+    if (v == null) return '';
+    const s = String(v);
+    return /[",\r\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  };
+  return [cols.join(','), ...rows.map(r => cols.map(c => cell(r[c])).join(','))].join('\r\n') + '\r\n';
+}
+function unionCols(rows) { const seen = new Set(), out = []; for (const r of rows) for (const k of Object.keys(r)) if (!seen.has(k)) { seen.add(k); out.push(k); } return out; }
+function download(name, text) {
+  const blob = new Blob(['﻿' + text], { type: 'text/csv;charset=utf-8' }); // BOM: Excel opens UTF-8 names correctly
+  const url = URL.createObjectURL(blob), a = document.createElement('a');
+  a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+}
+function stamp(iso) { const d = iso ? new Date(iso) : new Date(), p = n => String(n).padStart(2, '0'); return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}`; }
+function fileBase(s) { return `tapping_${slug(s.participant.id || s.participant.name)}_${stamp(s.startedAt)}`; }
+
+$('#dl-summary').addEventListener('click', () => {
+  const r = summaryRow(session); download(fileBase(session) + '_data.csv', toCSV([r], Object.keys(r))); downloaded = true;
+});
+$('#dl-raw').addEventListener('click', () => {
+  download(fileBase(session) + '_raw.csv', toCSV(rawRows(session), RAW_COLS)); downloaded = true;
+});
+/* =========================================================================
+   Email results (via Google Apps Script web app — see send-results.gs)
+   ========================================================================= */
+function buildPayload(s) {
+  const row = summaryRow(s), base = fileBase(s), p = s.participant, c = s.config, cont = c.continuation;
+  const rounds = finalTrials(s).map(t => ({ t, m: analyzeTrial(t).metrics })).sort((a, b) => a.t.bpm - b.t.bpm || a.t.rep - b.t.rep);
+  const columns = ['Tempo', 'Asynchrony', 'Asynchrony SD', 'Variability (CV)']
+    .concat(cont ? ['Tempo after clicks stopped', 'Variability after clicks stopped'] : []);
+  const rows = rounds.map(({ t, m }) => [
+    `${bpmLabel(t.bpm)} BPM${c.reps > 1 ? ` (rep ${t.rep})` : ''}`,
+    `${fmtSigned(m.syncMeanAsync)} ms`, `${fmt(m.syncSdAsync)} ms`, `${fmt(m.syncCvPct)} %`,
+    ...(cont ? [`${fmt(m.contTapBpm)} BPM (${fmtSigned(fin(m.contTapBpm) ? (m.contTapBpm - t.bpm) / t.bpm * 100 : null)} %)`, `${fmt(m.contCvPct)} %`] : []),
+  ]);
+  return {
+    app: APP_ID, version: APP_VERSION, summary: row,
+    dataCsv: toCSV([row], Object.keys(row)), dataFile: base + '_data.csv',
+    rawCsv: toCSV(rawRows(s), RAW_COLS), rawFile: base + '_raw.csv',
+    overview: {
+      participant: [['Name', p.name], ['Participant ID', p.id], ['Age', p.age], ['Musical training (years)', p.musicalTrainingYears],
+                    ['PROMS Accent score', s.proms.accent], ['PROMS Tempo score', s.proms.tempo]],
+      tappingColumns: columns, tappingRows: rows,
+      session: [['Session ID', s.sessionId], ['Completed', s.completedAt ? new Date(s.completedAt).toLocaleString('en-GB') : ''],
+                ['Rounds', `${rows.length} (order: ${row.round_order})`]],
+    },
+  };
+}
+async function postResults(url, payload) {
+  if (!url) throw new Error('not-configured');
+  const ctrl = new AbortController(), timer = setTimeout(() => ctrl.abort(), 30000);
+  try {
+    // No Content-Type header → sent as text/plain, which Apps Script accepts without a CORS preflight.
+    const res = await fetch(url, { method: 'POST', body: JSON.stringify(payload), signal: ctrl.signal, redirect: 'follow' });
+    let data = null; try { data = await res.json(); } catch (e) { /* not JSON */ }
+    if (!res.ok || !data || !data.ok) throw new Error((data && data.error) || `The server answered with status ${res.status}.`);
+    return data;
+  } finally { clearTimeout(timer); }
+}
+function setSendUI(state, msg) {
+  const btn = $('#send-results'), label = $('#send-label'), st = $('#send-status');
+  btn.disabled = state === 'sending' || state === 'sent';
+  label.textContent = state === 'sending' ? 'Sending…' : state === 'sent' ? 'Results sent ✓' : 'Send the results to the students';
+  st.textContent = msg || '';
+  st.classList.toggle('text-red-700', state === 'error');
+  st.classList.toggle('text-accent', state === 'sent');
+  st.classList.toggle('text-muted', state !== 'error' && state !== 'sent');
+}
+$('#send-results').addEventListener('click', async () => {
+  if (!session) return;
+  if (!config.resultsUrl) { setSendUI('error', 'Sending isn\'t set up on this computer yet. Please tell the researcher, or download the data below.'); return; }
+  setSendUI('sending', '');
+  try {
+    await postResults(config.resultsUrl, buildPayload(session));
+    session.sentAt = new Date().toISOString(); persistSession();
+    setSendUI('sent', 'The results were emailed to the research team. Thank you!');
+  } catch (err) {
+    const offline = !navigator.onLine || err.name === 'AbortError' || err instanceof TypeError;
+    setSendUI('error', offline
+      ? 'Couldn\'t reach the email service. Check the internet connection and try again, or download the data below.'
+      : `Sending failed: ${err.message} Try again, or download the data below.`);
+  }
+});
+$('#cfg-test-send').addEventListener('click', async () => {
+  const st = $('#cfg-send-status'), url = $('#cfg-results').value.trim();
+  st.classList.remove('text-red-700', 'text-accent');
+  if (!isResultsUrl(url)) { st.textContent = 'Paste the web app URL from Apps Script (it starts with https://script.google.com/ and ends with /exec).'; st.classList.add('text-red-700'); return; }
+  st.textContent = 'Sending test email…';
+  try {
+    await postResults(url, { app: APP_ID, test: true });
+    st.textContent = 'Test email sent. Check the inbox, then click "Save settings".'; st.classList.add('text-accent');
+  } catch (err) {
+    st.textContent = `Test failed: ${err instanceof TypeError ? 'could not reach the script (check the URL and that access is set to "Anyone").' : err.message}`;
+    st.classList.add('text-red-700');
+  }
+});
+
+$('#new-participant').addEventListener('click', () => {
+  if (!downloaded && !(session && session.sentAt) && !confirm('Start a new participant? This session is saved in the browser, but its results were not sent or downloaded yet.')) return;
+  session = null; downloaded = false;
+  $('#welcome-form').reset(); $('#bg-form').reset();
+  ['#proms-accent', '#proms-tempo'].forEach(s => { $(s).value = ''; });
+  $('#proms-done').checked = false; $('#proms-next').disabled = true;
+  setSendUI('idle', '');
+  go('welcome');
+});
+window.addEventListener('beforeunload', e => {
+  if (session && !downloaded && !session.sentAt && (session.trials.length || currentStep !== 'welcome')) { e.preventDefault(); e.returnValue = ''; }
+});
+
+/* =========================================================================
+   Researcher settings panel
+   ========================================================================= */
+function fillConfigForm(c) {
+  $('#cfg-tempos').value = c.tempos.join(', ');
+  $('#cfg-reps').value = c.reps; $('#cfg-sync').value = c.syncBeats; $('#cfg-contBeats').value = c.contBeats;
+  $('#cfg-exclude').value = c.excludeInitial; $('#cfg-practiceBpm').value = c.practiceBpm; $('#cfg-proms').value = c.promsUrl; $('#cfg-results').value = c.resultsUrl;
+  $('#cfg-cont').checked = c.continuation; $('#cfg-random').checked = c.randomize; $('#cfg-practice').checked = c.practice;
+  $('#cfg-contBeats').disabled = !c.continuation; $('#cfg-practiceBpm').disabled = !c.practice;
+  const base = location.href.split(/[?#]/)[0];
+  $('#cfg-link').value = base + '?' + configToParams(c);
+  $('#cfg-url-note').classList.toggle('hidden', !hasUrlConfig);
+}
+function readConfigForm() {
+  return sanitizeConfig({
+    tempos: $('#cfg-tempos').value, reps: $('#cfg-reps').value, syncBeats: $('#cfg-sync').value, contBeats: $('#cfg-contBeats').value,
+    excludeInitial: $('#cfg-exclude').value, practiceBpm: $('#cfg-practiceBpm').value, promsUrl: $('#cfg-proms').value, resultsUrl: $('#cfg-results').value,
+    continuation: $('#cfg-cont').checked, randomize: $('#cfg-random').checked, practice: $('#cfg-practice').checked,
+    practiceBeats: config.practiceBeats,
+  });
+}
+function applyConfig(c, save) {
+  config = c;
+  $('#proms-link').href = c.promsUrl;
+  fillConfigForm(c);
+  if (save) {
+    store.set(KEYS.config, c);
+    const ok = $('#cfg-saved'); ok.classList.remove('opacity-0'); setTimeout(() => ok.classList.add('opacity-0'), 1400);
+  }
+}
+['#cfg-cont', '#cfg-practice'].forEach(s => $(s).addEventListener('change', () => {
+  $('#cfg-contBeats').disabled = !$('#cfg-cont').checked; $('#cfg-practiceBpm').disabled = !$('#cfg-practice').checked;
+}));
+$('#cfg-save').addEventListener('click', () => applyConfig(readConfigForm(), true));
+$('#cfg-reset').addEventListener('click', () => { store.del(KEYS.config); applyConfig(sanitizeConfig({}), false); });
+$('#cfg-copy').addEventListener('click', async () => {
+  const inp = $('#cfg-link');
+  try { await navigator.clipboard.writeText(inp.value); } catch (e) { inp.select(); document.execCommand && document.execCommand('copy'); }
+  $('#cfg-copy').textContent = 'Copied'; setTimeout(() => { $('#cfg-copy').textContent = 'Copy'; }, 1400);
+});
+
+function refreshSessions() {
+  const all = store.get(KEYS.sessions, []);
+  const done = all.filter(s => s.complete).length, sent = all.filter(s => s.sentAt).length;
+  $('#sess-count').textContent = all.length
+    ? `${all.length} session${all.length === 1 ? '' : 's'} (${done} complete, ${sent} emailed). Incomplete sessions are included and marked session_complete = 0.`
+    : 'No sessions saved yet.';
+  ['#sess-dl-summary', '#sess-dl-raw', '#sess-clear'].forEach(s => { $(s).disabled = !all.length; });
+  return all;
+}
+$('#researcher').addEventListener('toggle', e => { if (e.target.open) { fillConfigForm(config); refreshSessions(); } });
+$('#sess-dl-summary').addEventListener('click', () => {
+  const rows = refreshSessions().filter(s => s.config).map(summaryRow);
+  download(`tapping_all-sessions_${stamp()}_data.csv`, toCSV(rows, unionCols(rows)));
+});
+$('#sess-dl-raw').addEventListener('click', () => {
+  const rows = refreshSessions().flatMap(rawRows);
+  download(`tapping_all-sessions_${stamp()}_raw.csv`, toCSV(rows, RAW_COLS));
+});
+$('#sess-clear').addEventListener('click', () => {
+  const n = refreshSessions().length;
+  if (n && confirm(`Delete all ${n} session${n === 1 ? '' : 's'} saved in this browser? Download them first — this cannot be undone.`)) { store.del(KEYS.sessions); refreshSessions(); }
+});
+
+/* =========================================================================
+   Init
+   ========================================================================= */
+if (isTouch) { $$('.touch-only').forEach(el => el.classList.remove('hidden')); }
+applyConfig(config, false);
+renderStepper(0);
+
+// Exposed for testing / offline re-analysis in the browser console.
+window.TappingStudy = { analyzeTrial, summaryRow, rawRows, toCSV, RAW_COLS, AudioEngine, get session() { return session; }, get run() { return Run.active; }, version: APP_VERSION };
+})();
+</script>
+</body>
+</html>
